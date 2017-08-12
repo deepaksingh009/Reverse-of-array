@@ -1,9 +1,9 @@
-c:\users\work\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp1.1\ConsoleApp2.deps.json
-c:\users\work\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp1.1\ConsoleApp2.runtimeconfig.json
-c:\users\work\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp1.1\ConsoleApp2.runtimeconfig.dev.json
-c:\users\work\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp1.1\ConsoleApp2.dll
-c:\users\work\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp1.1\ConsoleApp2.pdb
-c:\users\work\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp1.1\ConsoleApp2.AssemblyInfo.cs
-c:\users\work\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp1.1\ConsoleApp2.dll
-c:\users\work\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp1.1\ConsoleApp2.pdb
+C:\Users\work\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp1.1\ConsoleApp2.deps.json
+C:\Users\work\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp1.1\ConsoleApp2.runtimeconfig.json
+C:\Users\work\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp1.1\ConsoleApp2.runtimeconfig.dev.json
 C:\Users\work\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp1.1\ConsoleApp2.csprojResolveAssemblyReference.cache
+C:\Users\work\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp1.1\ConsoleApp2.AssemblyInfo.cs
+C:\Users\work\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp1.1\ConsoleApp2.dll
+C:\Users\work\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp1.1\ConsoleApp2.pdb
+C:\Users\work\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp1.1\ConsoleApp2.dll
+C:\Users\work\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp1.1\ConsoleApp2.pdb
