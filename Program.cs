@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 namespace ConsoleApp2
 {
 	class Program
@@ -66,8 +68,22 @@ namespace ConsoleApp2
 			//interviewquestion2 obj1 = new interviewquestion2();
 			//obj1.method();
 
-			int i = 78;
-			Console.WriteLine(i.CompareTo(14));
+
+			//var numbers = new int[3, 3];
+
+			//for (var i = 0; i < 3; i++)
+			//{
+			//	var numList = new string[3];
+			//	numList = Console.ReadLine().Split(' ');
+			//	for (var j = 0; j < 3; j++)
+			//	{
+			//		numbers[i, j] = Convert.ToInt32(numList[j]);
+			//	}
+			//}
+
+			Hourglassproblem obj = new Hourglassproblem();
+			obj.Hourglass();
+
 			Console.ReadLine();
 
 
