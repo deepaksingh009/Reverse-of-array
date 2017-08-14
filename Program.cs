@@ -62,27 +62,25 @@ namespace ConsoleApp2
 			//}
 
 
-			//interviewquestion1 obj = new interviewquestion1();
-			//obj.t(121);
-
-			//interviewquestion2 obj1 = new interviewquestion2();
-			//obj1.method();
 
 
-			//var numbers = new int[3, 3];
+			//string[] tokens_n = Console.ReadLine().Split(' ');
+			//int n = Convert.ToInt32(tokens_n[0]);
+			//int d = Convert.ToInt32(tokens_n[1]);
+			//string[] a_temp = Console.ReadLine().Split(' ');
+			//var result = new int[n];
 
-			//for (var i = 0; i < 3; i++)
+
+			//for (int i = 0; i < a_temp.Length; i++)
 			//{
-			//	var numList = new string[3];
-			//	numList = Console.ReadLine().Split(' ');
-			//	for (var j = 0; j < 3; j++)
-			//	{
-			//		numbers[i, j] = Convert.ToInt32(numList[j]);
-			//	}
+			//	result[i] = Convert.ToInt32(a_temp[i]);
 			//}
+			//ArrayLeftroatation obj = new ArrayLeftroatation();
+			////obj.method(result,n);
+			//obj.Method2();
 
-			Hourglassproblem obj = new Hourglassproblem();
-			obj.Hourglass();
+			interviewquestion2 b = new interviewquestion2();
+			b.method();
 
 			Console.ReadLine();
 

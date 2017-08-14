@@ -51,7 +51,7 @@ namespace ConsoleApp2
 			}
 
 			string Str = string.Empty;
-			Str = "abc";
+			Str = "ram";
 			int Length = 0;
 			int finalsum = 0;
 			Length = Str.Length - 1;            //storing the length of given string
