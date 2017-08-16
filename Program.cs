@@ -79,8 +79,12 @@ namespace ConsoleApp2
 			////obj.method(result,n);
 			//obj.Method2();
 
-			interviewquestion2 b = new interviewquestion2();
-			b.method();
+			//interviewquestion2 b = new interviewquestion2();
+			//b.method();
+			
+		
+
+			
 
 			Console.ReadLine();
 
