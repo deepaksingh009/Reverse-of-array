@@ -33,28 +33,44 @@ namespace ConsoleApp2
 
 		public void Method2()
 		{
-			string[] s1 = Console.ReadLine().Split(' ');
-			int n = int.Parse(s1[0]);
-			int k = int.Parse(s1[1]);
 
-			string[] s = Console.ReadLine().Split(' ');
-			int[] array = new int[n];
-
-			////pre-rotation of array method:
-			//-----------------------------------Right rotation
-			//for (int i = 0; i < n; i++)
-			//{
-			//	array[(i + k) % n] = int.Parse(s[i]);
-			//}
-
-			//------------------------------------Left rotation
-			for (int i = 0; i < n; i++)
+			List<int> input = new List<int>() { 1,2,3,4,5};
+			int noofrotation = 4;
+			///*List<int>*/ output = new List<int>();
+			int[] output = new int[input.Count];
+			int index = input.Count - noofrotation;
+			for (int i = 0; i < input.Count; i++)
 			{
-				array[(i + (n - k)) % n] = int.Parse(s[i]);
-				int test = (i + (n - k)) % n;
+				
+				output[index] = input[i];
+				index++;
 			}
 
-			for (int i = 0; i < n; i++) { Console.Write(array[i] + " "); }
+
+
+
+			//string[] s1 = Console.ReadLine().Split(' ');
+			//int n = int.Parse(s1[0]);
+			//int k = int.Parse(s1[1]);
+
+			//string[] s = Console.ReadLine().Split(' ');
+			//int[] array = new int[n];
+
+			//////pre-rotation of array method:
+			////-----------------------------------Right rotation
+			////for (int i = 0; i < n; i++)
+			////{
+			////	array[(i + k) % n] = int.Parse(s[i]);
+			////}
+
+			////------------------------------------Left rotation
+			//for (int i = 0; i < n; i++)
+			//{
+			//	array[(i + (n - k)) % n] = int.Parse(s[i]);
+			//	int test = (i + (n - k)) % n;
+			//}
+
+			//for (int i = 0; i < n; i++) { Console.Write(array[i] + " "); }
 		}
 
     }

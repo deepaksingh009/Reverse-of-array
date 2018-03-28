@@ -2264,6 +2264,18 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "TimePeriodLibrary.NET/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.6/Itenso.TimePeriod.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/Itenso.TimePeriod.dll": {}
+        }
       }
     }
   },
@@ -7067,11 +7079,26 @@
         "system.xml.xpath.xdocument.4.0.1.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "TimePeriodLibrary.NET/2.1.1": {
+      "sha512": "iiy1HaR8Sy+41I2DYPrl5llmlij5qzRv0X2tD3hGN0NoEX3La+0UIahMptbzsYsOokbIoNjuPrHdQcCgiTT45A==",
+      "type": "package",
+      "path": "timeperiodlibrary.net/2.1.1",
+      "files": [
+        "lib/net35/Itenso.TimePeriod.dll",
+        "lib/net40/Itenso.TimePeriod.dll",
+        "lib/net45/Itenso.TimePeriod.dll",
+        "lib/net46/Itenso.TimePeriod.dll",
+        "lib/netstandard1.6/Itenso.TimePeriod.dll",
+        "timeperiodlibrary.net.2.1.1.nupkg.sha512",
+        "timeperiodlibrary.net.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v1.1": [
-      "Microsoft.NETCore.App >= 1.1.1"
+      "Microsoft.NETCore.App >= 1.1.1",
+      "TimePeriodLibrary.NET >= 2.1.1"
     ]
   },
   "packageFolders": {
@@ -7080,10 +7107,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\work\\Documents\\Visual Studio 2017\\Projects\\ConsoleApp2\\ConsoleApp2\\ConsoleApp2.csproj",
+      "projectUniqueName": "C:\\Users\\work\\documents\\visual studio 2017\\Projects\\ConsoleApp2\\ConsoleApp2\\ConsoleApp2.csproj",
       "projectName": "ConsoleApp2",
-      "projectPath": "C:\\Users\\work\\Documents\\Visual Studio 2017\\Projects\\ConsoleApp2\\ConsoleApp2\\ConsoleApp2.csproj",
-      "outputPath": "C:\\Users\\work\\Documents\\Visual Studio 2017\\Projects\\ConsoleApp2\\ConsoleApp2\\obj\\",
+      "projectPath": "C:\\Users\\work\\documents\\visual studio 2017\\Projects\\ConsoleApp2\\ConsoleApp2\\ConsoleApp2.csproj",
+      "outputPath": "C:\\Users\\work\\documents\\visual studio 2017\\Projects\\ConsoleApp2\\ConsoleApp2\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
@@ -7101,6 +7128,10 @@
             "target": "Package",
             "version": "1.1.1",
             "autoReferenced": true
+          },
+          "TimePeriodLibrary.NET": {
+            "target": "Package",
+            "version": "2.1.1"
           }
         }
       }

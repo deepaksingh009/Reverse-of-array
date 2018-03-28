@@ -1,24 +1,22 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Itenso.TimePeriod;
+using static ConsoleApp2.Delegatess;
+
 namespace ConsoleApp2
 {
-	class Program
+	public class Program
 	{
+
+		
+		
 		static void Main(string[] args)
 		{
-			//int n = Convert.ToInt32(Console.ReadLine());
-			//string[] arr_temp = Console.ReadLine().Split(' ');
-
-
-
-			//int no = int.Parse(Console.ReadLine());
-			//int[] array = new int[no];
-			//for (int i = 0; i < array.Length; i++)
-			//{
-			//	array[i] = int.Parse(Console.ReadLine());
-			//}
 			#region reverseofarray
 			//int n = Convert.ToInt32(Console.ReadLine());
 			//string[] arr_temp = Console.ReadLine().Split(' ');
@@ -45,53 +43,35 @@ namespace ConsoleApp2
 			//
 
 			#endregion
-
-
-
-			//Tests n = new Tests();
-			//n.metho();
-			//Console.ReadLine();
-
-			//string test = "deepak";
-			//string test1 = "dee";
-			//if (test.Contains(test1))
-			//{
-			//	Console.WriteLine("don");
-			//	Console.ReadLine();
-
-			//}
-
-
-
-
-			//string[] tokens_n = Console.ReadLine().Split(' ');
-			//int n = Convert.ToInt32(tokens_n[0]);
-			//int d = Convert.ToInt32(tokens_n[1]);
-			//string[] a_temp = Console.ReadLine().Split(' ');
-			//var result = new int[n];
-
-
-			//for (int i = 0; i < a_temp.Length; i++)
-			//{
-			//	result[i] = Convert.ToInt32(a_temp[i]);
-			//}
-			//ArrayLeftroatation obj = new ArrayLeftroatation();
-			////obj.method(result,n);
-			//obj.Method2();
-
-			//interviewquestion2 b = new interviewquestion2();
-			//b.method();
-			
-		
-
-			
-
-			Console.ReadLine();
-
-
+			int i=1;
+			if (i++ && (i == 1)
+				{
+			}
 		}
+	}
+
+	public class test
+	{
+		test(int j)
+		{
+			j = 1;
+		}
+
+	}
+
+	public struct teststruct
+	{
+
+		teststruct(string d)
+		{
+		}
+		
 	}
 
 
 
+
 }
+
+
+
