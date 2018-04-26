@@ -1,77 +1,51 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ConsoleApp2.DataStructure;
+using ConsoleApp2.DataStructure.BinaryTree;
 using Itenso.TimePeriod;
 using static ConsoleApp2.Delegatess;
 
 namespace ConsoleApp2
 {
-	public class Program
+	public class BinarySearchTree
 	{
-
-		
-		
-		static void Main(string[] args)
+		static void Main()
 		{
-			#region reverseofarray
-			//int n = Convert.ToInt32(Console.ReadLine());
-			//string[] arr_temp = Console.ReadLine().Split(' ');
 
+			Node n = new Node();
+			BinaryTreeInsertion nums = new BinaryTreeInsertion();
+			nums.Insert(50);
+			nums.Insert(17);
+			n = nums.Insert(54);
 
-			//string[] reversearray = new string[n];
-			//int lenght = arr_temp.Length - 1;
-			//for (int i = 0; i < arr_temp.Length; i++)
-			//{
-
-			//	reversearray[lenght] = arr_temp[i];
-
-
-			//	lenght = lenght - 1;
-			//}
-
-			//dynamic final_list = null;
-			//foreach (var item in reversearray)
-			//{
-			//	final_list += item + " ";
-			//}
-
-			//Console.WriteLine(final_list);
-			//
-
-			#endregion
-			int i=1;
-			if (i++ && (i == 1)
-				{
-			}
+			//nums.Insert(12);
+			//nums.Insert(19);
+			//nums.Insert(54);
+			//nums.Insert(9);
+			//nums.Insert(14);
+			//nums.Insert(67);
+			//nums.Insert(76);
+			//nums.Insert(1);
+			BinaryTreeDeletion deletion = new BinaryTreeDeletion();
+			deletion.Delete(n,17);
+			Console.WriteLine("Deepak singh");
+			Console.ReadKey();
 		}
-	}
 
-	public class test
-	{
-		test(int j)
-		{
-			j = 1;
-		}
+
 
 	}
 
-	public struct teststruct
-	{
-
-		teststruct(string d)
-		{
-		}
-		
-	}
 
 
 
 
 }
-
 
 
