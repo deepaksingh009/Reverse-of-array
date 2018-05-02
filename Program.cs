@@ -18,13 +18,7 @@ namespace ConsoleApp2
 		static void Main()
 		{
 
-			//Node n = new Node();
-			//BinaryTreeInsertion nums = new BinaryTreeInsertion();
-			//nums.Insert(1);
-			//nums.Insert(2);
-			//nums.Insert(3);
-			//nums.Insert(4);
-			//nums.Insert(5);
+			
 
 			//Unbalancesbst nums = new Unbalancesbst();
 			//nums.Insert(1);
