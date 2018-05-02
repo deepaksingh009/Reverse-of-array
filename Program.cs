@@ -18,22 +18,40 @@ namespace ConsoleApp2
 		static void Main()
 		{
 
-			Node n = new Node();
-			BinaryTreeInsertion nums = new BinaryTreeInsertion();
-			nums.Insert(50);
-			nums.Insert(17);
-			n = nums.Insert(54);
-
-			//nums.Insert(12);
-			//nums.Insert(19);
-			//nums.Insert(54);
-			//nums.Insert(9);
-			//nums.Insert(14);
-			//nums.Insert(67);
-			//nums.Insert(76);
+			//Node n = new Node();
+			//BinaryTreeInsertion nums = new BinaryTreeInsertion();
 			//nums.Insert(1);
-			BinaryTreeDeletion deletion = new BinaryTreeDeletion();
-			deletion.Delete(n,17);
+			//nums.Insert(2);
+			//nums.Insert(3);
+			//nums.Insert(4);
+			//nums.Insert(5);
+
+			//Unbalancesbst nums = new Unbalancesbst();
+			//nums.Insert(1);
+			//nums.Insert(2);
+			//nums.Insert(3);
+			//nums.Insert(4);
+			//nums.Insert(5);
+
+			BinaryTree b = new BinaryTree();
+			b.insert(1);
+			b.insert(2);
+			b.insert(3);
+			b.insert(4);
+			b.insert(5);
+			b.insert(6);
+			b.insert(7);
+			b.insert(8);
+			b.insert(9);
+			b.insert(10);
+			b.insert(11);
+			Console.WriteLine("The Inorder Traversal:\n");
+			b.inOrderTraversal();
+			Console.WriteLine("\n\nThe Preorder Traversal:\n");
+			b.preOrderTraversal();
+			Console.WriteLine("\n\nThe Postorder Traversal:\n");
+			b.postOrderTraversal();
+			Console.WriteLine();
 			Console.WriteLine("Deepak singh");
 			Console.ReadKey();
 		}
