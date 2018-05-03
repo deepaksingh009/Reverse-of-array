@@ -120,13 +120,25 @@ public	class BinaryTreeNode
 		private void addNode(int c, ref BinaryTreeNode rptr)
 		{
 			if (rptr == null)
+
+				//when current node is null
 				rptr = new BinaryTreeNode(c);
 			else if (rptr.left == null)
+				//when current node's left chid is null :-left Subtree
+
 				addNode(c, ref rptr.left);
 			else if (rptr.right == null)
+				//when current node's Right chid is null :-left Subtree
+
 				addNode(c, ref rptr.right);
-			else
+			else if (rptr.left == null || rptr.right == null)
+				//when current node's left child is not null and right child not null :-left Subtree
+
 				addNode(c, ref rptr.left);
+			else
+			{
+				addNode(c, ref rptr.right);
+			}
 		}
 
 		public void inOrderTraversal()
