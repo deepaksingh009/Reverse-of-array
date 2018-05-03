@@ -61,7 +61,7 @@ namespace ConsoleApp2.DataStructure.BinaryTree
 		}
 	}
 
- 	public class Unbalancesbst
+	public class Unbalancesbst
 	{
 		Node Bst;
 		static int Left = 0;
@@ -81,7 +81,7 @@ namespace ConsoleApp2.DataStructure.BinaryTree
 			}
 			else
 			{
-				Node Temp=Bst;
+				Node Temp = Bst;
 
 				if (Temp.Left == null)
 				{
@@ -92,15 +92,15 @@ namespace ConsoleApp2.DataStructure.BinaryTree
 
 				}
 
-		
-				
+
+
 
 			}
 		}
 
 	}
 
-public	class BinaryTreeNode
+	public class BinaryTreeNode
 	{
 		private int id;
 		public void setID(int _id) { id = _id; }
@@ -109,7 +109,7 @@ public	class BinaryTreeNode
 		public BinaryTreeNode() { left = right = null; }
 		public BinaryTreeNode(int _id) { id = _id; left = right = null; }
 	}
- public	class BinaryTree
+	public class BinaryTree
 	{
 		private BinaryTreeNode root;
 		public BinaryTree() { root = null; }
@@ -131,14 +131,11 @@ public	class BinaryTreeNode
 				//when current node's Right chid is null :-left Subtree
 
 				addNode(c, ref rptr.right);
-			else if (rptr.left == null || rptr.right == null)
+			else
 				//when current node's left child is not null and right child not null :-left Subtree
 
 				addNode(c, ref rptr.left);
-			else
-			{
-				addNode(c, ref rptr.right);
-			}
+
 		}
 
 		public void inOrderTraversal()
