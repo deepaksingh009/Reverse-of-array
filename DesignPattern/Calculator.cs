@@ -17,5 +17,10 @@ namespace ConsoleApp2.DesignPattern
         {
             return 1 - 1;
         }
-    }
+
+		public int multiply()
+		{
+			return 1 - 1;
+		}
+	}
 }

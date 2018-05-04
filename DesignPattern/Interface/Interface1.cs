@@ -10,5 +10,7 @@ namespace ConsoleApp2.DesignPattern.Interface
 
         int subtract();
 
+		int multiply();
+
     }
 }
