@@ -113,6 +113,12 @@ namespace ConsoleApp2.DataStructure.BinaryTree
 	{
 		private BinaryTreeNode root;
 		public BinaryTree() { root = null; }
+		int leftsubtree = 2;
+		int rightsubtree = 2;
+
+		int rightlefttree = 2;
+		int rightRighttree = 2;
+
 		public void insert(int c)
 		{
 			addNode(c, ref root);
@@ -123,17 +129,35 @@ namespace ConsoleApp2.DataStructure.BinaryTree
 
 				//when current node is null
 				rptr = new BinaryTreeNode(c);
-			else if (rptr.left == null)
-				//when current node's left chid is null :-left Subtree
-
+			else if (rptr.left == null && leftsubtree != 0)
+			//when current node's left chid is null :-left Subtree
+			{
 				addNode(c, ref rptr.left);
-			else if (rptr.right == null)
-				//when current node's Right chid is null :-left Subtree
-
+				leftsubtree--;
+			}
+			else if (rptr.right == null && rightsubtree != 0)
+			//when current node's Right chid is null :-left Subtree
+			{
 				addNode(c, ref rptr.right);
-			else
-				//when current node's left child is not null and right child not null :-left Subtree
+				rightsubtree--;
+			}
 
+			else if (rptr.left == null && rightlefttree != 0)
+			{
+				addNode(c, ref rptr.left);
+				rightlefttree--;
+			}
+			else if (rptr.right == null && rightRighttree != 0)
+			//when current node's Right chid is null :-left Subtree
+			{
+				addNode(c, ref rptr.right);
+				rightRighttree--;
+			}
+			else if (leftsubtree == 0 && rightsubtree == 0)
+				addNode(c, ref rptr.right);
+
+			//when current node's left child is not null and right child not null :-left Subtree
+			else
 				addNode(c, ref rptr.left);
 
 		}
