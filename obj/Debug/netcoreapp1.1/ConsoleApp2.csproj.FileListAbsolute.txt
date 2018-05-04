@@ -7,3 +7,14 @@ C:\Users\work\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\bin\
 C:\Users\work\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp1.1\ConsoleApp2.dll
 C:\Users\work\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp1.1\ConsoleApp2.pdb
 C:\Users\work\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp1.1\ConsoleApp2.csprojResolveAssemblyReference.cache
+D:\Deepak\Reverse-of-array\bin\Debug\netcoreapp1.1\ConsoleApp2.deps.json
+D:\Deepak\Reverse-of-array\bin\Debug\netcoreapp1.1\ConsoleApp2.runtimeconfig.json
+D:\Deepak\Reverse-of-array\bin\Debug\netcoreapp1.1\ConsoleApp2.runtimeconfig.dev.json
+D:\Deepak\Reverse-of-array\bin\Debug\netcoreapp1.1\ConsoleApp2.dll
+D:\Deepak\Reverse-of-array\bin\Debug\netcoreapp1.1\ConsoleApp2.pdb
+D:\Deepak\Reverse-of-array\obj\Debug\netcoreapp1.1\ConsoleApp2.csprojResolveAssemblyReference.cache
+D:\Deepak\Reverse-of-array\obj\Debug\netcoreapp1.1\ConsoleApp2.csproj.CoreCompileInputs.cache
+D:\Deepak\Reverse-of-array\obj\Debug\netcoreapp1.1\ConsoleApp2.AssemblyInfoInputs.cache
+D:\Deepak\Reverse-of-array\obj\Debug\netcoreapp1.1\ConsoleApp2.AssemblyInfo.cs
+D:\Deepak\Reverse-of-array\obj\Debug\netcoreapp1.1\ConsoleApp2.dll
+D:\Deepak\Reverse-of-array\obj\Debug\netcoreapp1.1\ConsoleApp2.pdb
