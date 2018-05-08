@@ -162,7 +162,7 @@ namespace ConsoleApp2.DataStructure.BinaryTree
 
             }
             else if (val <= (val / 2) + 1)
-          
+            //when current node's Right chid is null :-left Subtree
             {
                 addNode(c, ref rptr.right);
 
