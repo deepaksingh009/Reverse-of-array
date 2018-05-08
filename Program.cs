@@ -41,6 +41,8 @@ namespace ConsoleApp2
             b.insert(9);
             b.insert(10);
             b.insert(11);
+            b.insert(12);
+            b.insert(13);
             Console.WriteLine("The Inorder Traversal:\n");
             b.inOrderTraversal();
             Console.WriteLine("\n\nThe Preorder Traversal:\n");
