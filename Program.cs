@@ -29,36 +29,42 @@ namespace ConsoleApp2
             //nums.Insert(4);
             //nums.Insert(5);
 
-            BinaryTree b = new BinaryTree();
-            b.insert(1);
-            b.insert(2);
-            b.insert(3);
-            b.insert(4);
-            b.insert(5);
-            b.insert(6);
-            b.insert(7);
-            b.insert(8);
-            b.insert(9);
-            b.insert(10);
-            b.insert(11);
-            b.insert(12);
-            b.insert(13);
-            Console.WriteLine("The Inorder Traversal:\n");
-            b.inOrderTraversal();
-            Console.WriteLine("\n\nThe Preorder Traversal:\n");
-            b.preOrderTraversal();
-            Console.WriteLine("\n\nThe Postorder Traversal:\n");
-            b.postOrderTraversal();
-            Console.WriteLine();
-            Console.WriteLine("Deepak singh");
-            Console.ReadKey();
+            //BinaryTree b = new BinaryTree();
+            //b.insert(1);
+            //b.insert(2);
+            //b.insert(3);
+            //b.insert(4);
+            //b.insert(5);
+            //b.insert(6);
+            //b.insert(7);
+            //b.insert(8);
+            //b.insert(9);
+            //b.insert(10);
+            //b.insert(11);
+            //b.insert(12);
+            //b.insert(13);
+            //Console.WriteLine("The Inorder Traversal:\n");
+            //b.inOrderTraversal();
+            //Console.WriteLine("\n\nThe Preorder Traversal:\n");
+            //b.preOrderTraversal();
+            //Console.WriteLine("\n\nThe Postorder Traversal:\n");
+            //b.postOrderTraversal();
+            //Console.WriteLine();
+            //Console.WriteLine("Deepak singh");
+            //Console.ReadKey();
 
 
-            FactoryMethod factoryMethod = new FactoryMethod();
-            Itestinginterface itestinginterface = factoryMethod.getcal(1);
-            int i = itestinginterface.add();
-            int j = itestinginterface.subtract();
-            Console.WriteLine("deepak");
+            //FactoryMethod factoryMethod = new FactoryMethod();
+            //Itestinginterface itestinginterface = factoryMethod.getcal(1);
+            //int i = itestinginterface.add();
+            //int j = itestinginterface.subtract();
+            //Console.WriteLine("deepak");
+            //Console.ReadKey();
+
+            Resume resume = new Resume();
+            resume.CreatePages(1);
+            resume.CreatePages(2);
+
             Console.ReadKey();
 
 
