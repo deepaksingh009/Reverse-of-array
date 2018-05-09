@@ -148,19 +148,8 @@ namespace ConsoleApp2.DataStructure.BinaryTree
 
             else if (val > (val / 2) + 1)
 
-            {
-                bool u = Test(rptr.left.left);
-                if (u == false)
-                {
-                    addNode(c, ref rptr.left);
-                }
-                else
-                {
-                    addNode(c, ref rptr.right);
-                }
+                addNode(c, ref rptr.left);
 
-
-            }
             else if (val <= (val / 2) + 1)
             //when current node's Right chid is null :-left Subtree
             {
@@ -213,7 +202,7 @@ namespace ConsoleApp2.DataStructure.BinaryTree
 
         public bool Test(BinaryTreeNode binaryTreeNode)
         {
-            bool returnresuly=false;
+            bool returnresuly = false;
             if (binaryTreeNode != null)
             {
 
@@ -226,13 +215,8 @@ namespace ConsoleApp2.DataStructure.BinaryTree
                     returnresuly = true;
 
                 }
-                else
-                {
-                    returnresuly = true;
-                }
-
             }
             return returnresuly;
-        }     
+        }
     }
 }
