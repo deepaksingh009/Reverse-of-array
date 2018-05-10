@@ -10,7 +10,19 @@ namespace ConsoleApp2.DesignPattern.Interface
 
         int subtract();
 
-		int multiply();
+        int multiply();
 
     }
+    /// <summary>
+
+    /// The 'Product' abstract class
+
+    /// </summary>
+    abstract class Transport
+
+    {
+
+    }
+    
+
 }

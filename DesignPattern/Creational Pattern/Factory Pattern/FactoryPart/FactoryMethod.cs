@@ -23,16 +23,8 @@ namespace ConsoleApp2.DesignPattern
         }
     }
 
-    /// <summary>
 
-    /// The 'Product' abstract class
 
-    /// </summary>
-    abstract class Transport
-
-    {
-       
-    }
 
     /// <summary>
 
@@ -124,3 +116,24 @@ namespace ConsoleApp2.DesignPattern
     //}
 
 }
+
+#region MainImplementation
+///<summary>
+///Abstract implenation
+///</summary>
+
+//Resume resume = new Resume();
+//resume.CreatePages(1);
+//            resume.CreatePages(2);
+
+///<summary>
+///Interface implenation
+///</summary>
+//FactoryMethod factoryMethod = new FactoryMethod();
+//Itestinginterface itestinginterface = factoryMethod.getcal(1);
+//int i = itestinginterface.add();
+//int j = itestinginterface.subtract();
+
+
+
+#endregion
