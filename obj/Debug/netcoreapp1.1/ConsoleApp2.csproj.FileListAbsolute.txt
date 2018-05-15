@@ -17,3 +17,4 @@ D:\Deepak\Reverse-of-array\obj\Debug\netcoreapp1.1\ConsoleApp2.AssemblyInfoInput
 D:\Deepak\Reverse-of-array\obj\Debug\netcoreapp1.1\ConsoleApp2.AssemblyInfo.cs
 D:\Deepak\Reverse-of-array\obj\Debug\netcoreapp1.1\ConsoleApp2.dll
 D:\Deepak\Reverse-of-array\obj\Debug\netcoreapp1.1\ConsoleApp2.pdb
+D:\Deepak\Reverse-of-array\obj\Debug\netcoreapp1.1\ConsoleApp2.csprojResolveAssemblyReference.cache
