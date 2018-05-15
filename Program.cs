@@ -72,7 +72,7 @@ namespace ConsoleApp2
 
 
 
-            BinaryTree tree = new BinaryTree();
+            b tree = new b();
             tree.root = new tNode(1);
             tree.root.left = new tNode(2);
             tree.root.right = new tNode(3);
@@ -85,17 +85,17 @@ namespace ConsoleApp2
             tree.root.right.right = new tNode(7);
 
 
-            tree.root.left.left.left = new tNode(8);
-            tree.root.left.left.right = new tNode(9);
+            //tree.root.left.left.left = new tNode(8);
+            //tree.root.left.left.right = new tNode(9);
 
-            tree.root.left.right.left = new tNode(10);
-            tree.root.left.right.right = new tNode(11);
+            //tree.root.left.right.left = new tNode(10);
+            //tree.root.left.right.right = new tNode(11);
 
-            tree.root.right.left.left = new tNode(12);
-            tree.root.right.left.right = new tNode(13);
+            //tree.root.right.left.left = new tNode(12);
+            //tree.root.right.left.right = new tNode(13);
 
-            tree.root.right.right.left = new tNode(14);
-            tree.root.right.right.right = new tNode(15);
+            //tree.root.right.right.left = new tNode(14);
+            //tree.root.right.right.right = new tNode(15);
 
 
 
@@ -216,28 +216,40 @@ namespace ConsoleApp2
 
     public class b
     {
-
-        public void insert(Node root)
+        public tNode root;
+        public void MorrisTraversal(tNode root)
         {
-            Node current, temp;
+            tNode current, temp;
 
+            if (root == null)
+                return;
             current = root;
-
             while (current != null)
             {
-                if (current.Left == null)
+
+                if (current.left == null)
                 {
-                    Console.WriteLine(current.Data);
-                    current = current.Right;
+                    Console.WriteLine(current.data + " ");
+                    current = current.right;
+
                 }
                 else
                 {
+                    temp = current.left;
+                    while (temp.right != null && temp.right != current)
+                        temp = temp.right;
 
-                    temp = current.Left;
-
-                    while (temp != null && temp != current)
-                        temp = temp.Right;
-
+                    if (temp.right == null)
+                    {
+                        temp.right = current;
+                        current = current.left;
+                    }
+                    else
+                    {
+                        temp.right = null;
+                        Console.Write(current.data + " ");
+                        current = current.right;
+                    }
                 }
             }
         }
