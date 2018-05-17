@@ -6,7 +6,7 @@ namespace ConsoleApp2.DataStructure.BinaryTree
 {
     public class TreeTraversal
     {
-        public void Preorder(tNode node)
+        public void Preorder(Node node)
         {
             if (node == null)
             {
@@ -14,37 +14,39 @@ namespace ConsoleApp2.DataStructure.BinaryTree
             }
             //preorder
             //DLR
-
-            Preorder(node.left);
-            Console.WriteLine(node.data);
-            Preorder(node.right);
+            Console.WriteLine(node.Data);
+            Preorder(node.Left);
+           
+            Preorder(node.Right);
         }
-        public void inOrder(tNode node)
+        public void inOrder(Node node)
         {
             if (node == null)
             {
                 return;
             }
             //Inorder
-            //LRD
-            inOrder(node.left);
-            Console.WriteLine(node.data);
-            inOrder(node.right);
+            //LDR
+            inOrder(node.Left);
+            Console.WriteLine(node.Data);
+            inOrder(node.Right);
+            
         }
-        public void PostOrder(tNode node)
+        public void PostOrder(Node node)
         {
             if (node == null)
             {
                 return;
             }
             //Postorder
-            //RDL
-            PostOrder(node.left);
-            Console.WriteLine(node.data);
-            PostOrder(node.right);
+            //LRD
+            PostOrder(node.Left);
+            PostOrder(node.Right);
+            Console.WriteLine(node.Data);
         }
     }
 
+   
     //implenation
 
     //MorriseInordertreetraversal tree = new MorriseInordertreetraversal();

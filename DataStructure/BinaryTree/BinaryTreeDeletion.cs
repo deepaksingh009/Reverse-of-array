@@ -11,14 +11,14 @@ namespace ConsoleApp2.DataStructure
 		{
 			Node n = Nodes;
 
-			if (n.Data < itemToDelete)
-			{
-				n.Left = null;
-			}
-			else
-			{
-				n.Right = null;
-			}
+			//if (n.Data < itemToDelete)
+			//{
+			//	n.Left = null;
+			//}
+			//else
+			//{
+			//	n.Right = null;
+			//}
 
 
 		}

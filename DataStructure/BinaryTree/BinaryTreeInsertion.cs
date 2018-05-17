@@ -6,6 +6,14 @@ namespace ConsoleApp2.DataStructure.BinaryTree
 {
     public class Node
     {
+        public Node()
+        {
+        }
+        public Node(int item)
+        {
+            Data = item;
+            Left = Right = null;
+        }
         public int Data { get; set; }
         public Node Left { get; set; }
         public Node Right { get; set; }
@@ -120,6 +128,7 @@ namespace ConsoleApp2.DataStructure.BinaryTree
         public void insert(int c)
         {
             addNode(c, ref root);
+        
         }
         private void addNode(int c, ref BinaryTreeNode rptr)
         {
