@@ -1,0 +1,11 @@
+D:\Deepak\Reverse-of-array\bin\Release\netcoreapp1.1\ConsoleApp2.deps.json
+D:\Deepak\Reverse-of-array\bin\Release\netcoreapp1.1\ConsoleApp2.runtimeconfig.json
+D:\Deepak\Reverse-of-array\bin\Release\netcoreapp1.1\ConsoleApp2.runtimeconfig.dev.json
+D:\Deepak\Reverse-of-array\bin\Release\netcoreapp1.1\ConsoleApp2.dll
+D:\Deepak\Reverse-of-array\bin\Release\netcoreapp1.1\ConsoleApp2.pdb
+D:\Deepak\Reverse-of-array\obj\Release\netcoreapp1.1\ConsoleApp2.csprojResolveAssemblyReference.cache
+D:\Deepak\Reverse-of-array\obj\Release\netcoreapp1.1\ConsoleApp2.csproj.CoreCompileInputs.cache
+D:\Deepak\Reverse-of-array\obj\Release\netcoreapp1.1\ConsoleApp2.AssemblyInfoInputs.cache
+D:\Deepak\Reverse-of-array\obj\Release\netcoreapp1.1\ConsoleApp2.AssemblyInfo.cs
+D:\Deepak\Reverse-of-array\obj\Release\netcoreapp1.1\ConsoleApp2.dll
+D:\Deepak\Reverse-of-array\obj\Release\netcoreapp1.1\ConsoleApp2.pdb
