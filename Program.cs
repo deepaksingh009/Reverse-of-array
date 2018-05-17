@@ -1,6 +1,9 @@
 ﻿using ConsoleApp2.DataStructure.BinaryTree;
 using System;
 using System.Collections.Generic;
+using ConsoleApp2.DesignPattern;
+using ConsoleApp2.DesignPattern.Interface;
+using ConsoleApp2.DesignPattern.Creational_Pattern.Factory_Pattern;
 
 namespace ConsoleApp2
 {
@@ -9,28 +12,35 @@ namespace ConsoleApp2
         static void Main()
         {
 
-            Node root = null;
-          
-            root = new Node(1);
-            root.Left = new Node(2);
-            root.Right = new Node(3);
-            root.Left.Left = new Node(4);
-            root.Left.Right = new Node(5);
-            root.Right.Left = new Node(6);
-            root.Right.Right = new Node(7);
+			//Node root = null;
 
-            TreeTraversal treeTraversal = new TreeTraversal();
-            Console.WriteLine("Inorder");
-            treeTraversal.inOrder(root);
-            //Console.WriteLine("preorder");
-            //treeTraversal.Preorder(root);
-            //Console.WriteLine("postorder");
-            //treeTraversal.PostOrder(root);
+			//root = new Node(1);
+			//root.Left = new Node(2);
+			//root.Right = new Node(3);
+			//root.Left.Left = new Node(4);
+			//root.Left.Right = new Node(5);
+			//root.Right.Left = new Node(6);
+			//root.Right.Right = new Node(7);
+
+			//TreeTraversal treeTraversal = new TreeTraversal();
+			//Console.WriteLine("Inorder");
+			//treeTraversal.inOrder(root);
+			//Console.WriteLine("preorder");
+			//treeTraversal.Preorder(root);
+			//Console.WriteLine("postorder");
+			//treeTraversal.PostOrder(root);
 
 
-            //BinaryTree n = new BinaryTree();
-            //n.iterativePreorder(root);
-            Console.ReadKey();
+			//BinaryTree n = new BinaryTree();
+			//n.iterativePreorder(root);
+
+			FactoryMethod f = new FactoryMethod();
+			Itestinginterface t = f.getcal(1);
+			int i = t.add();
+
+			Console.WriteLine(i);
+
+			Console.ReadKey();
         }
 
 

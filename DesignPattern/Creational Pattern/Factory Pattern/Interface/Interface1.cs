@@ -7,11 +7,6 @@ namespace ConsoleApp2.DesignPattern.Interface
     public interface Itestinginterface
     {
         int add();
-
-        int subtract();
-
-        int multiply();
-
     }
     /// <summary>
 

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using ConsoleApp2.DesignPattern.Creational_Pattern.Factory_Pattern;
 
 namespace ConsoleApp2.DesignPattern
 {
@@ -12,11 +13,11 @@ namespace ConsoleApp2.DesignPattern
             Itestinginterface returnvalue = null;
             if (i == 1)
             {
-                returnvalue = new Calculator();
+                returnvalue = new twonosum();
             }
             else
             {
-                returnvalue = new Calculator();
+                returnvalue = new Threenosum();
             }
 
             return returnvalue;
@@ -94,26 +95,7 @@ namespace ConsoleApp2.DesignPattern
         }
     }
 
-    /// <summary>
-
-    /// A 'ConcreteCreator' class
-
-    /// </summary>
-
-    //class Report : Document
-
-    //{
-    //    // Factory Method implementation
-
-    //    public override void CreatePages()
-    //    {
-    //        Pages.Add(new IntroductionPage());
-    //        Pages.Add(new ResultsPage());
-    //        Pages.Add(new ConclusionPage());
-    //        Pages.Add(new SummaryPage());
-    //        Pages.Add(new BibliographyPage());
-    //    }
-    //}
+   
 
 }
 
