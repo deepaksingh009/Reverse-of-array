@@ -22,10 +22,10 @@ namespace ConsoleApp2
             TreeTraversal treeTraversal = new TreeTraversal();
             Console.WriteLine("Inorder");
             treeTraversal.inOrder(root);
-            Console.WriteLine("preorder");
-            treeTraversal.Preorder(root);
-            Console.WriteLine("postorder");
-            treeTraversal.PostOrder(root);
+            //Console.WriteLine("preorder");
+            //treeTraversal.Preorder(root);
+            //Console.WriteLine("postorder");
+            //treeTraversal.PostOrder(root);
 
 
             //BinaryTree n = new BinaryTree();

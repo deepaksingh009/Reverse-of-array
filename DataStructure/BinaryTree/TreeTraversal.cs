@@ -19,6 +19,8 @@ namespace ConsoleApp2.DataStructure.BinaryTree
            
             Preorder(node.Right);
         }
+
+
         public void inOrder(Node node)
         {
             if (node == null)
