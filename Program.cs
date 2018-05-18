@@ -12,33 +12,33 @@ namespace ConsoleApp2
         static void Main()
         {
 
-			//Node root = null;
+            Node root = null;
 
-			//root = new Node(1);
-			//root.Left = new Node(2);
-			//root.Right = new Node(3);
-			//root.Left.Left = new Node(4);
-			//root.Left.Right = new Node(5);
-			//root.Right.Left = new Node(6);
-			//root.Right.Right = new Node(7);
+            root = new Node(1);
+            root.Left = new Node(2);
+            root.Right = new Node(3);
+            root.Left.Left = new Node(4);
+            root.Left.Right = new Node(5);
+            root.Right.Left = new Node(6);
+            root.Right.Right = new Node(7);
 
-			//TreeTraversal treeTraversal = new TreeTraversal();
-			//Console.WriteLine("Inorder");
-			//treeTraversal.inOrder(root);
-			//Console.WriteLine("preorder");
-			//treeTraversal.Preorder(root);
-			//Console.WriteLine("postorder");
-			//treeTraversal.PostOrder(root);
+            //TreeTraversal treeTraversal = new TreeTraversal();
+            //Console.WriteLine("Inorder");
+            //treeTraversal.inOrder(root);
+            //Console.WriteLine("preorder");
+            //treeTraversal.Preorder(root);
+            //Console.WriteLine("postorder");
+            //treeTraversal.PostOrder(root);
 
 
-			//BinaryTree n = new BinaryTree();
-			//n.iterativePreorder(root);
+            TreeTraversaliterating n = new TreeTraversaliterating();
+            n.postOrderItrOneStack(root);
 
-			FactoryMethod f = new FactoryMethod();
-			Itestinginterface t = f.getcal(1);
-			int i = t.add();
+   //         FactoryMethod f = new FactoryMethod();
+			//Itestinginterface t = f.getcal(1);
+			//int i = t.add();
 
-			Console.WriteLine(i);
+			//Console.WriteLine(i);
 
 			Console.ReadKey();
         }
@@ -49,62 +49,7 @@ namespace ConsoleApp2
    
     public class BinaryTree
     {
-
-        public Node root;
-
-        void iterativePreorder()
-        {
-            iterativePreorder(root);
-        }
-
-        // An iterative process to print preorder traversal of Binary tree
-        public void iterativePreorder(Node node)
-        {
-            if (node == null)
-            {
-                return;
-            }
-
-
-            Stack<Node> nodeStack = new Stack<Node>();
-            nodeStack.Push(node);
-            //Node curr = node;
-            while (nodeStack.Count > 0)
-            {
-
-                Node mynode = nodeStack.Peek();
-                Console.WriteLine(mynode.Data + " ");
-                nodeStack.Pop();
-
-                // Push right and left children of the popped node to stack
-                if (mynode.Right != null)
-                {
-                    nodeStack.Push(mynode.Right);
-                }
-                if (mynode.Left != null)
-                {
-                    nodeStack.Push(mynode.Left);
-                }
-                //if (curr != null)
-                //{
-
-                //    nodeStack.Push(curr);
-                //    curr = curr.left;
-
-                //}
-                //else
-                //{
-                //    curr = nodeStack.Pop();
-                //    Console.WriteLine(curr.data);
-                //    curr = curr.right;
-
-
-                //}
-            }
-
-
-
-        }
+       
         //public class BinaryTree
         //{
 
