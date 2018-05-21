@@ -8,16 +8,7 @@ namespace ConsoleApp2.DesignPattern.Interface
     {
         int add();
     }
-    /// <summary>
-
-    /// The 'Product' abstract class
-
-    /// </summary>
-    abstract class Transport
-
-    {
-
-    }
+   
     
 
 }
