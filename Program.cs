@@ -12,44 +12,65 @@ namespace ConsoleApp2
         static void Main()
         {
 
-            Node root = null;
+            //Node root = null;
 
-            root = new Node(1);
-            root.Left = new Node(2);
-            root.Right = new Node(3);
-            root.Left.Left = new Node(4);
-            root.Left.Right = new Node(5);
-            root.Right.Left = new Node(6);
-            root.Right.Right = new Node(7);
+            //root = new Node(1);
+            //root.Left = new Node(2);
+            //root.Right = new Node(3);
+            //root.Left.Left = new Node(4);
+            //root.Left.Right = new Node(5);
+            //root.Right.Left = new Node(6);
+            //root.Right.Right = new Node(7);
 
-            //TreeTraversal treeTraversal = new TreeTraversal();
-            //Console.WriteLine("Inorder");
-            //treeTraversal.inOrder(root);
-            //Console.WriteLine("preorder");
-            //treeTraversal.Preorder(root);
-            //Console.WriteLine("postorder");
-            //treeTraversal.PostOrder(root);
+            ////TreeTraversaliterating n = new TreeTraversaliterating();
+            ////n.postOrderItrOneStack(root);
 
+            //BinaryTree binaryTree = new BinaryTree();
+            //binaryTree.preorder(root);
 
-            TreeTraversaliterating n = new TreeTraversaliterating();
-            n.postOrderItrOneStack(root);
+            FactoryMethod f = new FactoryMethod();
+            Itestinginterface t = f.getcal(2);
+            int i = t.add();
 
-   //         FactoryMethod f = new FactoryMethod();
-			//Itestinginterface t = f.getcal(1);
-			//int i = t.add();
+            Console.WriteLine(i);
 
-			//Console.WriteLine(i);
-
-			Console.ReadKey();
+            Console.ReadKey();
         }
 
 
     }
 
-   
+
     public class BinaryTree
     {
-       
+
+        public void preorder(Node node)
+        {
+            Stack<Node> nodeStack = new Stack<Node>();
+            nodeStack.Push(node);
+            //Node curr = node;
+            while (nodeStack.Count > 0)
+            {
+
+                Node mynode = nodeStack.Peek();
+                Console.WriteLine(mynode.Data + " ");
+                nodeStack.Pop();
+
+
+                if (mynode.Right != null)
+                {
+                    nodeStack.Push(mynode.Right);
+                }
+                if (mynode.Left != null)
+                {
+                    nodeStack.Push(mynode.Left);
+                }
+
+            }
+
+        }
+
+
         //public class BinaryTree
         //{
 

@@ -26,7 +26,7 @@ namespace ConsoleApp2.DataStructure.BinaryTree
                 Console.WriteLine(mynode.Data + " ");
                 nodeStack.Pop();
 
-                // Push right and left children of the popped node to stack
+       
                 if (mynode.Right != null)
                 {
                     nodeStack.Push(mynode.Right);
@@ -35,21 +35,7 @@ namespace ConsoleApp2.DataStructure.BinaryTree
                 {
                     nodeStack.Push(mynode.Left);
                 }
-                //if (curr != null)
-                //{
-
-                //    nodeStack.Push(curr);
-                //    curr = curr.left;
-
-                //}
-                //else
-                //{
-                //    curr = nodeStack.Pop();
-                //    Console.WriteLine(curr.data);
-                //    curr = curr.right;
-
-
-                //}
+               
             }
 
 
