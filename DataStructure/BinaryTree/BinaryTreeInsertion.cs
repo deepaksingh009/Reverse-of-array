@@ -69,34 +69,51 @@ namespace ConsoleApp2.DataStructure.BinaryTree
         }
     }
 
-    public class Unbalancesbst
+    public class BinaryTreeLevelInsertion
     {
-        Node Bst;
-        static int Left = 0;
-        static int right = 0;
-
-        public void Insert(int i)
+        public void levelorderinsertion()
         {
+            Node binarytree;
+            int count = 0;
+            List<int> list = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
+            Node nodes = new Node();
+            nodes.Data = list[count];
+            list.RemoveAt(count);
 
-            Node singlenode = new Node();
-            singlenode.Data = i;
-
-
-
-            if (Bst == null)
+            Queue<Node> Queenodes = new Queue<Node>();
+            binarytree = nodes;
+            Node current;
+            Node test = binarytree;
+            int lastindex = list.Count - 1;
+            while (list.Count > 0)
             {
-                Bst = singlenode;
-            }
-            else
-            {
-                Node Temp = Bst;
+                current = test;
 
-                if (Temp.Left == null)
+
+                if (test.Left == null)
                 {
+                    Node d = new Node();
+                    d.Data = list[count];
+                    list.RemoveAt(count);
+                    //  count++;
+                    test.Left = d;
+                    Queenodes.Enqueue(d);
+
 
                 }
-                else
+                if (test.Right == null)
                 {
+                    Node s = new Node();
+                    s.Data = list[count];
+                    list.RemoveAt(count);
+                    //  count--;
+                    test.Right = s;
+                    Queenodes.Enqueue(s);
+
+                }
+                if (test.Left != null && test.Right != null)
+                {
+                    test = Queenodes.Dequeue();
 
                 }
 
@@ -104,128 +121,16 @@ namespace ConsoleApp2.DataStructure.BinaryTree
 
 
             }
+
+
+
         }
+
+
+        //Implementation
+        //BinaryTreeLevelInsertion binaryTreeInsertion = new BinaryTreeLevelInsertion();
+        //binaryTreeInsertion.levelorderinsertion();  
 
     }
 
-    public class BinaryTreeNode
-    {
-        private int id;
-        public void setID(int _id) { id = _id; }
-        public int getID() { return id; }
-        public BinaryTreeNode left; public BinaryTreeNode right;
-        public BinaryTreeNode() { left = right = null; }
-        public BinaryTreeNode(int _id) { id = _id; left = right = null; }
-    }
-    public class BinaryTree
-    {
-        private BinaryTreeNode root;
-        public BinaryTree() { root = null; }
-        int val = 2;
-        int level = 0;
-        int j = 0;
-
-        public void insert(int c)
-        {
-            addNode(c, ref root);
-        
-        }
-        private void addNode(int c, ref BinaryTreeNode rptr)
-        {
-            if (rptr == null)
-
-                //when current node is null
-                rptr = new BinaryTreeNode(c);
-            else if (rptr.left == null)
-            //when current node's left chid is null :-left Subtree
-            {
-                addNode(c, ref rptr.left);
-                val--;
-            }
-            else if (rptr.right == null)
-            //when current node's Right chid is null :-left Subtree
-            {
-                addNode(c, ref rptr.right);
-                val--;
-                if (val == 0)
-                {
-                    level = level + 2;
-                    val = level * 2;
-                    j++;
-                }
-            }
-
-            else if (val > (val / 2) + 1)
-
-                addNode(c, ref rptr.left);
-
-            else if (val <= (val / 2) + 1)
-            //when current node's Right chid is null :-left Subtree
-            {
-                addNode(c, ref rptr.right);
-
-            }
-
-
-        }
-
-        public void inOrderTraversal()
-        {
-            inOrderTraversalHelper(root);
-        }
-        private void inOrderTraversalHelper(BinaryTreeNode r)
-        {
-            if (r != null)
-            {
-                inOrderTraversalHelper(r.left);
-                Console.Write("{0}   ", r.getID());
-                inOrderTraversalHelper(r.right);
-            }
-        }
-        public void preOrderTraversal()
-        {
-            preOrderTraversalHelper(root);
-        }
-        private void preOrderTraversalHelper(BinaryTreeNode r)
-        {
-            if (r != null)
-            {
-                Console.Write("{0}   ", r.getID());
-                preOrderTraversalHelper(r.left);
-                preOrderTraversalHelper(r.right);
-            }
-        }
-        public void postOrderTraversal()
-        {
-            postOrderTraversalHelper(root);
-        }
-        private void postOrderTraversalHelper(BinaryTreeNode r)
-        {
-            if (r != null)
-            {
-                postOrderTraversalHelper(r.left);
-                postOrderTraversalHelper(r.right);
-                Console.Write("{0}   ", r.getID());
-            }
-        }
-
-        public bool Test(BinaryTreeNode binaryTreeNode)
-        {
-            bool returnresuly = false;
-            if (binaryTreeNode != null)
-            {
-
-                if (binaryTreeNode.left == null || binaryTreeNode.right == null)
-                {
-                    returnresuly = false;
-                }
-                else if ((binaryTreeNode.left != null && binaryTreeNode.right != null))
-                {
-                    returnresuly = true;
-
-                }
-            }
-            return returnresuly;
-        }
-    }
 }
