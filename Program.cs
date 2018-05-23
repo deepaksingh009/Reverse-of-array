@@ -25,14 +25,13 @@ namespace ConsoleApp2
             ////TreeTraversaliterating n = new TreeTraversaliterating();
             ////n.postOrderItrOneStack(root);
 
-            //BinaryTree binaryTree = new BinaryTree();
-            //binaryTree.preorder(root);
+            BinaryTree binaryTree = new BinaryTree();
+            binaryTree.levelorderinsertion();
 
-            FactoryMethod f = new FactoryMethod();
-            Itestinginterface t = f.getcal(2);
-            int i = t.add();
-
-            Console.WriteLine(i);
+            //FactoryMethod f = new FactoryMethod();
+            //Itestinginterface t = f.getcal(2);
+            //int i = t.add();
+            //Console.WriteLine(i);
 
             Console.ReadKey();
         }
@@ -44,29 +43,58 @@ namespace ConsoleApp2
     public class BinaryTree
     {
 
-        public void preorder(Node node)
+        public void levelorderinsertion()
         {
-            Stack<Node> nodeStack = new Stack<Node>();
-            nodeStack.Push(node);
-            //Node curr = node;
-            while (nodeStack.Count > 0)
+            Node binarytree;
+            int count = 0;
+            List<int> list = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9,10,11 };
+            Node nodes = new Node();
+            nodes.Data = list[count];
+            list.RemoveAt(count);
+
+            Queue<Node> Queenodes = new Queue<Node>();
+            binarytree = nodes;
+            Node current;
+            Node test = binarytree;
+            int lastindex = list.Count - 1;
+            while (list.Count > 0)
             {
-
-                Node mynode = nodeStack.Peek();
-                Console.WriteLine(mynode.Data + " ");
-                nodeStack.Pop();
+                current = test;
 
 
-                if (mynode.Right != null)
+                if (test.Left == null)
                 {
-                    nodeStack.Push(mynode.Right);
+                    Node d = new Node();
+                    d.Data = list[count];
+                    list.RemoveAt(count);
+                  //  count++;
+                    test.Left = d;
+                    Queenodes.Enqueue(d);
+
+
                 }
-                if (mynode.Left != null)
+                if (test.Right == null)
                 {
-                    nodeStack.Push(mynode.Left);
+                    Node s = new Node();
+                    s.Data = list[count];
+                    list.RemoveAt(count);
+                  //  count--;
+                    test.Right = s;
+                    Queenodes.Enqueue(s);
+                   
                 }
+                if (test.Left != null && test.Right != null)
+                {
+                    test = Queenodes.Dequeue();
+
+                }
+
+
+
 
             }
+
+
 
         }
 
