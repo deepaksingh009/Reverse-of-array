@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using ConsoleApp2.DesignPattern;
 using ConsoleApp2.DesignPattern.Interface;
 using ConsoleApp2.DesignPattern.Creational_Pattern.Factory_Pattern;
-
+using ConsoleApp2.DesignPattern.Creational_Pattern;
 namespace ConsoleApp2
 {
     public class BinarySearchTree
@@ -23,15 +23,33 @@ namespace ConsoleApp2
             //root.Right.Right = new Node(7);
 
             ////TreeTraversaliterating n = new TreeTraversaliterating();
-            ////n.postOrderItrOneStack(root);
+            ////n.postOrderItrOneStack(root);                                           
 
-     
+
             //FactoryMethod f = new FactoryMethod();
             //Itestinginterface t = f.getcal(2);
             //int i = t.add();
             //Console.WriteLine(i);
 
+
+
+
+            // Create and run the African animal world
+
+            ContinentFactory africa = new AfricaFactory();
+            AnimalWorld world = new AnimalWorld(africa);
+            world.RunFoodChain();
+
+            // Create and run the American animal world
+
+            ContinentFactory america = new AmericaFactory();
+            world = new AnimalWorld(america);
+            world.RunFoodChain();
+
+            // Wait for user input
+
             Console.ReadKey();
+
         }
 
 
