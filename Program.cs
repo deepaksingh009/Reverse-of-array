@@ -12,15 +12,28 @@ namespace ConsoleApp2
         static void Main()
         {
 
-            //Node root = null;
+            Node root = null;
+            Node root1 = null;
+            root = new Node(1);
+            root.Left = new Node(2);
+            root.Right = new Node(3);
+            root.Left.Left = new Node(4);
+            root.Left.Right = new Node(5);
 
-            //root = new Node(1);
-            //root.Left = new Node(2);
-            //root.Right = new Node(3);
-            //root.Left.Left = new Node(4);
-            //root.Left.Right = new Node(5);
-            //root.Right.Left = new Node(6);
-            //root.Right.Right = new Node(7);
+
+            root1 = new Node(1);
+            root1.Left = new Node(2);
+            root1.Right = new Node(3);
+            root1.Left.Left = new Node(4);
+            root1.Left.Right = new Node(5);
+
+
+            BinaryTree tree = new BinaryTree();
+            if (tree.identicalTrees(root, root1))
+                Console.WriteLine("Both trees are identical");
+            else
+                Console.WriteLine("Trees are not identical");
+
 
             ////TreeTraversaliterating n = new TreeTraversaliterating();
             ////n.postOrderItrOneStack(root);                                           
@@ -34,19 +47,19 @@ namespace ConsoleApp2
 
 
 
-            // Create and run the African animal world
+            //// Create and run the African animal world
 
-            ContinentFactory africa = new AfricaFactory();
-            AnimalWorld world = new AnimalWorld(africa);
-            world.RunFoodChain();
+            //ContinentFactory africa = new AfricaFactory();
+            //AnimalWorld world = new AnimalWorld(africa);
+            //world.RunFoodChain();
 
-            // Create and run the American animal world
+            //// Create and run the American animal world
 
-            ContinentFactory america = new AmericaFactory();
-            world = new AnimalWorld(america);
-            world.RunFoodChain();
+            //ContinentFactory america = new AmericaFactory();
+            //world = new AnimalWorld(america);
+            //world.RunFoodChain();
 
-            // Wait for user input
+            //// Wait for user input
 
             Console.ReadKey();
 
@@ -59,9 +72,27 @@ namespace ConsoleApp2
     public class BinaryTree
     {
 
-        
 
+      
 
+        /* Given two trees, return true if they are
+           structurally identical */
+     public   Boolean identicalTrees(Node a, Node b)
+        {
+            /*1. both empty */
+            if (a == null && b == null)
+                return true;
+
+            /* 2. both non-empty -> compare them */
+            if (a != null && b != null)
+                return (a.Data == b.Data && identicalTrees(a.Left, b.Left) && identicalTrees(a.Right, b.Right));
+
+            /* 3. one empty, one not -> false */
+            return false;
+        }
+
+        /* Driver program to test identicalTrees() function */
+       
         //public class BinaryTree
         //{
 
