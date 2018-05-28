@@ -28,7 +28,6 @@ D:\Deepak\Reverse-of-array\obj\Debug\netcoreapp1.1\ConsoleApp2.pdb
 \\IN-PC21\Deepak\Reverse-of-array\obj\Debug\netcoreapp1.1\ConsoleApp2.AssemblyInfo.cs
 \\IN-PC21\Deepak\Reverse-of-array\obj\Debug\netcoreapp1.1\ConsoleApp2.dll
 \\IN-PC21\Deepak\Reverse-of-array\obj\Debug\netcoreapp1.1\ConsoleApp2.pdb
-D:\Deepak\Reverse-of-array\obj\Debug\netcoreapp1.1\ConsoleApp2.csprojResolveAssemblyReference.cache
 C:\Users\work\Documents\Visual Studio 2017\Reverse-of-array\bin\Debug\netcoreapp1.1\ConsoleApp2.deps.json
 C:\Users\work\Documents\Visual Studio 2017\Reverse-of-array\bin\Debug\netcoreapp1.1\ConsoleApp2.runtimeconfig.json
 C:\Users\work\Documents\Visual Studio 2017\Reverse-of-array\bin\Debug\netcoreapp1.1\ConsoleApp2.runtimeconfig.dev.json
@@ -38,3 +37,4 @@ C:\Users\work\Documents\Visual Studio 2017\Reverse-of-array\obj\Debug\netcoreapp
 C:\Users\work\Documents\Visual Studio 2017\Reverse-of-array\obj\Debug\netcoreapp1.1\ConsoleApp2.AssemblyInfo.cs
 C:\Users\work\Documents\Visual Studio 2017\Reverse-of-array\obj\Debug\netcoreapp1.1\ConsoleApp2.dll
 C:\Users\work\Documents\Visual Studio 2017\Reverse-of-array\obj\Debug\netcoreapp1.1\ConsoleApp2.pdb
+D:\Deepak\Reverse-of-array\obj\Debug\netcoreapp1.1\ConsoleApp2.csprojResolveAssemblyReference.cache

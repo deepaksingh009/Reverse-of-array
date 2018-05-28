@@ -5,34 +5,39 @@ using ConsoleApp2.DesignPattern;
 using ConsoleApp2.DesignPattern.Interface;
 using ConsoleApp2.DesignPattern.Creational_Pattern.Factory_Pattern;
 using ConsoleApp2.DesignPattern.Creational_Pattern;
+using ConsoleApp2.Patterns;
 namespace ConsoleApp2
 {
     public class BinarySearchTree
     {
         static void Main()
         {
-
-            Node root = null;
-            Node root1 = null;
-            root = new Node(1);
-            root.Left = new Node(2);
-            root.Right = new Node(3);
-            root.Left.Left = new Node(4);
-            root.Left.Right = new Node(5);
+            Patternsclass patterns = new Patternsclass();
+            patterns.Lshapepattern();
+            patterns.Lshapereverse();
 
 
-            root1 = new Node(1);
-            root1.Left = new Node(2);
-            root1.Right = new Node(3);
-            root1.Left.Left = new Node(4);
-            root1.Left.Right = new Node(5);
+            //Node root = null;
+            //Node root1 = null;
+            //root = new Node(1);
+            //root.Left = new Node(2);
+            //root.Right = new Node(3);
+            //root.Left.Left = new Node(4);
+            //root.Left.Right = new Node(5);
 
 
-            BinaryTree tree = new BinaryTree();
-            if (tree.identicalTrees(root, root1))
-                Console.WriteLine("Both trees are identical");
-            else
-                Console.WriteLine("Trees are not identical");
+            //root1 = new Node(1);
+            //root1.Left = new Node(2);
+            //root1.Right = new Node(3);
+            //root1.Left.Left = new Node(4);
+            //root1.Left.Right = new Node(5);
+
+
+            //BinaryTree tree = new BinaryTree();
+            //if (tree.identicalTrees(root, root1))
+            //    Console.WriteLine("Both trees are identical");
+            //else
+            //    Console.WriteLine("Trees are not identical");
 
 
             ////TreeTraversaliterating n = new TreeTraversaliterating();
