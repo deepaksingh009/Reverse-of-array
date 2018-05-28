@@ -1,0 +1,1 @@
+﻿https://www.codeproject.com/Articles/716413/Factory-Method-Pattern-vs-Abstract-Factory-Pattern
