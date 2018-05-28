@@ -53,9 +53,32 @@ namespace ConsoleApp2.Patterns
             }
         }
 
-        public void traingale()
+        public void LReverse()
         {
+            int counter = 1;
+            for (int i = 10; i > 0; i--)    
+            {
+                for (int j = 0; j <= i; j++)
+                {
+                    if (j != i)
+                    {
+                        Console.Write(" ");
+                    }
+                    else
+                    {
+                        for (int k = 0; k < counter; k++)
+                        {
+                            Console.Write("*");
+                            
+                            
+                        }
+                        counter++;
+                    }
+                   
+                }
+                Console.WriteLine();
 
+            }
         }
 
     }
