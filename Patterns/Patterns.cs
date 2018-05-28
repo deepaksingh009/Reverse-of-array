@@ -56,7 +56,7 @@ namespace ConsoleApp2.Patterns
         public void LReverse()
         {
             int counter = 1;
-            int no = 3;
+            int no =6;
             for (int i = no; i > 0; i--)    
             {
                 for (int j = 0; j <= i; j++)
@@ -69,11 +69,26 @@ namespace ConsoleApp2.Patterns
                     {
                         for (int k = 1; k <= counter; k++)
                         {
-                            Console.Write(k);
+                            if (k == 2)
+                            {
+                                Console.Write("*");
+                            }
+                            else
+                            {
+                                Console.Write(k);
+                            }
                         }
-                        for (int f = 1; f < counter; f++)
+                        for (int f = counter-1; f >= 1; f--)
                         {
-                            Console.Write(f);
+
+                            if (f == 2)
+                            {
+                                Console.Write("*");
+                            }
+                            else
+                            {
+                                Console.Write(f);
+                            }
                         }
                         counter++;
                     }
@@ -82,21 +97,35 @@ namespace ConsoleApp2.Patterns
 
             }
           counter = 1;
-            for (int i = 3; i > 0; i--)
+            for (int i = no; i > 0; i--)
             {
                 for (int j = 0; j < counter; j++)
                 {
                     Console.Write(" ");
 
                 }
-                for (int k = 1; k <= i-1; k++)
+                for (int k = 1; k < i-1; k++)
                 {
-                    Console.Write(k);
+                    if (k == 2)
+                    {
+                        Console.Write("*");
+                    }
+                    else
+                    {
+                        Console.Write(k);
+                    }
                 }
 
-                for (int k = counter; k > 0; k--)
+                for (int k = i-1; k > 0; k--)
                 {
-                    Console.Write(k);
+                    if (k== 2)
+                    {
+                        Console.Write("*");
+                    }
+                    else
+                    {
+                        Console.Write(k);
+                    }
                 }
                 counter++;
 
@@ -115,9 +144,14 @@ namespace ConsoleApp2.Patterns
                     Console.Write(" ");
 
                 }
-                for (int k = 0; k < i-1; k++)
+                for (int k = 1; k < i; k++)
                 {
-                    Console.Write("*");
+                    Console.Write(k);
+                }
+
+                for (int f = i; f > 0; f--)
+                {
+                    Console.Write(f);
                 }
                 counter++;
 
