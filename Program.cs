@@ -12,13 +12,7 @@ namespace ConsoleApp2
     {
         static void Main()
         {
-            Patternsclass patterns = new Patternsclass();
-           
-           
-            patterns.Lshapepattern();
-            patterns.Lshapereverse();
-            patterns.LReverse();
-            patterns.ReversePyramid();
+
 
 
 
