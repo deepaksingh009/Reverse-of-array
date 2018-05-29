@@ -4,20 +4,20 @@ using System.Text;
 
 namespace ConsoleApp2.Patterns
 {
-  public  class Patternsclass
+    public class Patternsclass
     {
         public void Lshapepattern()
         {
             int no = 10;
-    
+
             for (int i = 0; i < no; i++)
             {
-                    for (int j = 0; j < i; j++)
-                    {
-                        Console.Write("*");
-                    }
-                    Console.WriteLine();
-               
+                for (int j = 0; j < i; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+
 
 
             }
@@ -56,12 +56,12 @@ namespace ConsoleApp2.Patterns
         public void LReverse()
         {
             int counter = 1;
-            int no =6;
-            for (int i = no; i > 0; i--)    
+            int no = 6;
+            for (int i = no; i > 0; i--)
             {
                 for (int j = 0; j <= i; j++)
                 {
-                    if (j != i-1)
+                    if (j != i - 1)
                     {
                         Console.Write(" ");
                     }
@@ -78,7 +78,7 @@ namespace ConsoleApp2.Patterns
                                 Console.Write(k);
                             }
                         }
-                        for (int f = counter-1; f >= 1; f--)
+                        for (int f = counter - 1; f >= 1; f--)
                         {
 
                             if (f == 2)
@@ -96,7 +96,7 @@ namespace ConsoleApp2.Patterns
                 Console.WriteLine();
 
             }
-          counter = 1;
+            counter = 1;
             for (int i = no; i > 0; i--)
             {
                 for (int j = 0; j < counter; j++)
@@ -104,7 +104,7 @@ namespace ConsoleApp2.Patterns
                     Console.Write(" ");
 
                 }
-                for (int k = 1; k < i-1; k++)
+                for (int k = 1; k < i - 1; k++)
                 {
                     if (k == 2)
                     {
@@ -116,9 +116,9 @@ namespace ConsoleApp2.Patterns
                     }
                 }
 
-                for (int k = i-1; k > 0; k--)
+                for (int k = i - 1; k > 0; k--)
                 {
-                    if (k== 2)
+                    if (k == 2)
                     {
                         Console.Write("*");
                     }
@@ -162,3 +162,10 @@ namespace ConsoleApp2.Patterns
 
     }
 }
+
+//Implementation
+//            Patternsclass patterns = new Patternsclass();
+//patterns.Lshapepattern();
+//            patterns.Lshapereverse();
+//            patterns.LReverse();
+//            patterns.ReversePyramid();
