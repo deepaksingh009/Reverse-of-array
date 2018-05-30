@@ -13,39 +13,6 @@ namespace ConsoleApp2
         static void Main()
         {
 
-            //get shape factory
-            AbstractFactory shapeFactory = FactoryProducer.getFactory("SHAPE");
-
-            //get an object of Shape Circle
-            shape shape1 = shapeFactory.GetShape("CIRCLE");
-
-            //call draw method of Shape Circle
-            shape1.dimensions();
-
-            //get an object of Shape Rectangle
-            shape shape2 = shapeFactory.GetShape("RECTANGLE");
-
-            //call draw method of Shape Rectangle
-            shape2.dimensions();
-
-         
-
-            //get color factory
-            AbstractFactory colorFactory = FactoryProducer.getFactory("COLOR");
-
-            //get an object of Color Red
-            color color1 = colorFactory.Getcolor("RED");
-
-            //call fill method of Red
-            color1.fill();
-
-            //get an object of Color Green
-            color color2 = colorFactory.Getcolor("Green");
-
-            //call fill method of Green
-            color2.fill();
-
-
 
             //Node root = null;
             //Node root1 = null;
