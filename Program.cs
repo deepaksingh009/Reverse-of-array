@@ -43,11 +43,6 @@ namespace ConsoleApp2
             ////n.postOrderItrOneStack(root);                                           
 
 
-            //FactoryMethod f = new FactoryMethod();
-            //Itestinginterface t = f.getcal(2);
-            //int i = t.add();
-            //Console.WriteLine(i);
-
 
 
 

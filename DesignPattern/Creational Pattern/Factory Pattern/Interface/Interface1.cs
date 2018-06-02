@@ -8,7 +8,4 @@ namespace ConsoleApp2.DesignPattern.Interface
     {
         int add();
     }
-   
-    
-
 }
