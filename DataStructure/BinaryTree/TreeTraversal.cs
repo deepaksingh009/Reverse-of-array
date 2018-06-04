@@ -52,6 +52,30 @@ namespace ConsoleApp2.DataStructure.BinaryTree
     {
         public void Levelodertraversal(Node node)
         {
+            Queue<Node> nodeQueue = new Queue<Node>();
+            nodeQueue.Enqueue(node);
+            while (nodeQueue.Count > 0)
+            {
+                Node nodetoprint = new Node();
+
+                nodetoprint = nodeQueue.Dequeue();
+                Console.WriteLine(nodetoprint.Data);
+
+                
+                if(nodetoprint.Left!=null)
+                {
+                    nodeQueue.Enqueue(nodetoprint.Left);
+
+                }
+                if (nodetoprint.Right != null)
+                {
+                    nodeQueue.Enqueue(nodetoprint.Right);
+
+                }
+                //nodeQueue.Dequeue();
+
+
+            }
 
         }
     }
