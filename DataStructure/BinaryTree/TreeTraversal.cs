@@ -16,7 +16,7 @@ namespace ConsoleApp2.DataStructure.BinaryTree
             //DLR
             Console.WriteLine(node.Data);
             Preorder(node.Left);
-           
+
             Preorder(node.Right);
         }
 
@@ -32,7 +32,7 @@ namespace ConsoleApp2.DataStructure.BinaryTree
             inOrder(node.Left);
             Console.WriteLine(node.Data);
             inOrder(node.Right);
-            
+
         }
         public void PostOrder(Node node)
         {
@@ -48,7 +48,11 @@ namespace ConsoleApp2.DataStructure.BinaryTree
         }
     }
 
-   
+    public class LevelorderTraversal
+    {
+    }
+
+
     //implenation
 
     //MorriseInordertreetraversal tree = new MorriseInordertreetraversal();

@@ -18,6 +18,7 @@ namespace ConsoleApp2.DataStructure.BinaryTree
         public Node Left { get; set; }
         public Node Right { get; set; }
     }
+
     public class BinaryTreeInsertion
     {
         Node BinaryTree;
@@ -82,14 +83,9 @@ namespace ConsoleApp2.DataStructure.BinaryTree
 
             Queue<Node> Queenodes = new Queue<Node>();
             binarytree = nodes;
-            Node current;
             Node test = binarytree;
-            int lastindex = list.Count - 1;
             while (list.Count > 0)
             {
-                current = test;
-
-
                 if (test.Left == null)
                 {
                     Node d = new Node();

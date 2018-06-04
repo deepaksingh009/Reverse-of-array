@@ -4,19 +4,14 @@ using System.Text;
 
 namespace ConsoleApp2.DesignPattern.Creational_Pattern
 {
-    public class BuilderDesingPattern
-    {
-
-    }
-
     public interface Builder
     {
-         void setType(Type type);
-         void setSeats(int seats);
-         void setEngine(Engine engine);
-         void setTransmission(Transmission transmission);
-         void setTripComputer(TripComputer tripComputer);
-         void setGPSNavigator(GPSNavigator gpsNavigator);
+        void setType(Type type);
+        void setSeats(int seats);
+        void setEngine(Engine engine);
+        void setTransmission(Transmission transmission);
+        void setTripComputer(TripComputer tripComputer);
+        void setGPSNavigator(GPSNavigator gpsNavigator);
     }
 
     public class CarBuilder : Builder
