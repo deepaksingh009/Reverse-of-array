@@ -50,6 +50,10 @@ namespace ConsoleApp2.DataStructure.BinaryTree
 
     public class LevelorderTraversal
     {
+        public void Levelodertraversal(Node node)
+        {
+
+        }
     }
 
 

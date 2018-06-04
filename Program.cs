@@ -13,19 +13,6 @@ namespace ConsoleApp2
 		static void Main()
 		{
 
-			test t = new test();
-			t.nol = 1;
-
-			test f = new test();
-			f.nol = t.nol;
-			f.nol = 2;
-			
-			void testmethod()
-			{
-		
-			}
-			
-
 			//Node root = null;
 			//Node root1 = null;
 			//root = new Node(1);
@@ -154,15 +141,7 @@ namespace ConsoleApp2
 
 	}
 
-	public class test
-	{
-		public int nol { get; set; }
-
-		public void printno()
-		{
-			console
-		}
-	}
+	
 }
 
 
