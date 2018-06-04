@@ -8,162 +8,161 @@ using ConsoleApp2.DesignPattern.Creational_Pattern;
 using ConsoleApp2.Patterns;
 namespace ConsoleApp2
 {
-    public class BinarySearchTree
-    {
-        static void Main()
-        {
+	public class BinarySearchTree
+	{
+		static void Main()
+		{
+
+			test t = new test();
+			t.nol = 1;
+
+			test f = new test();
+			f.nol = t.nol;
+			f.nol = 2;
+			
+			void testmethod()
+			{
+		
+			}
+			
+
+			//Node root = null;
+			//Node root1 = null;
+			//root = new Node(1);
+			//root.Left = new Node(2);
+			//root.Right = new Node(3);
+			//root.Left.Left = new Node(4);
+			//root.Left.Right = new Node(5);
 
 
-            Director director = new Director();
-
-            // Director gets the concrete builder object from the client
-            // (application code). That's because application knows better which
-            // builder to use to get a specific product.
-            CarBuilder builder = new CarBuilder();
-            director.constructSportsCar(builder);
-
-            // The final product is often retrieved from a builder object, since
-            // Director is not aware and not dependent on concrete builders and
-            // products.
-            Car car = builder.getResult();
-            Console.WriteLine("Car built:\n" + car.getType());
+			//root1 = new Node(1);
+			//root1.Left = new Node(2);
+			//root1.Right = new Node(3);
+			//root1.Left.Left = new Node(4);
+			//root1.Left.Right = new Node(5);
 
 
-            CarManualBuilder manualBuilder = new CarManualBuilder();
-
-            // Director may know several building recipes.
-            director.constructSportsCar(manualBuilder);
-            Manual carManual = manualBuilder.getResult();
-            Console.WriteLine("\nCar manual built:\n" + carManual.print());
-
-
-            //Node root = null;
-            //Node root1 = null;
-            //root = new Node(1);
-            //root.Left = new Node(2);
-            //root.Right = new Node(3);
-            //root.Left.Left = new Node(4);
-            //root.Left.Right = new Node(5);
+			//BinaryTree tree = new BinaryTree();
+			//if (tree.identicalTrees(root, root1))
+			//    Console.WriteLine("Both trees are identical");
+			//else
+			//    Console.WriteLine("Trees are not identical");
 
 
-            //root1 = new Node(1);
-            //root1.Left = new Node(2);
-            //root1.Right = new Node(3);
-            //root1.Left.Left = new Node(4);
-            //root1.Left.Right = new Node(5);
-
-
-            //BinaryTree tree = new BinaryTree();
-            //if (tree.identicalTrees(root, root1))
-            //    Console.WriteLine("Both trees are identical");
-            //else
-            //    Console.WriteLine("Trees are not identical");
-
-
-            ////TreeTraversaliterating n = new TreeTraversaliterating();
-            ////n.postOrderItrOneStack(root);                                           
+			////TreeTraversaliterating n = new TreeTraversaliterating();
+			////n.postOrderItrOneStack(root);                                           
 
 
 
 
 
-            //// Create and run the African animal world
+			//// Create and run the African animal world
 
-            //ContinentFactory africa = new AfricaFactory();
-            //AnimalWorld world = new AnimalWorld(africa);
-            //world.RunFoodChain();
+			//ContinentFactory africa = new AfricaFactory();
+			//AnimalWorld world = new AnimalWorld(africa);
+			//world.RunFoodChain();
 
-            //// Create and run the American animal world
+			//// Create and run the American animal world
 
-            //ContinentFactory america = new AmericaFactory();
-            //world = new AnimalWorld(america);
-            //world.RunFoodChain();
+			//ContinentFactory america = new AmericaFactory();
+			//world = new AnimalWorld(america);
+			//world.RunFoodChain();
 
-            //// Wait for user input
+			//// Wait for user input
 
-            Console.ReadKey();
+			Console.ReadKey();
 
-        }
-
-
-    }
+		}
 
 
-    public class BinaryTree
-    {
+	}
 
 
-      
+	public class BinaryTree
+	{
 
-        /* Given two trees, return true if they are
+
+
+
+		/* Given two trees, return true if they are
            structurally identical */
-     public   Boolean identicalTrees(Node a, Node b)
-        {
-            /*1. both empty */
-            if (a == null && b == null)
-                return true;
+		public Boolean identicalTrees(Node a, Node b)
+		{
+			/*1. both empty */
+			if (a == null && b == null)
+				return true;
 
-            /* 2. both non-empty -> compare them */
-            if (a != null && b != null)
-                return (a.Data == b.Data && identicalTrees(a.Left, b.Left) && identicalTrees(a.Right, b.Right));
+			/* 2. both non-empty -> compare them */
+			if (a != null && b != null)
+				return (a.Data == b.Data && identicalTrees(a.Left, b.Left) && identicalTrees(a.Right, b.Right));
 
-            /* 3. one empty, one not -> false */
-            return false;
-        }
+			/* 3. one empty, one not -> false */
+			return false;
+		}
 
-        /* Driver program to test identicalTrees() function */
-       
-        //public class BinaryTree
-        //{
+		/* Driver program to test identicalTrees() function */
 
-        //    // Java program to find height of tree
+		//public class BinaryTree
+		//{
 
-        //    // A binary tree node
-        //    //public class Nodes
-        //    //{
-        //    //    public int data;
-        //    //    public Nodes left, right;
+		//    // Java program to find height of tree
 
-        //    //    public Nodes(int item)
-        //    //    {
-        //    //        data = item;
-        //    //        left = right = null;
-        //    //    }
-        //    //}
+		//    // A binary tree node
+		//    //public class Nodes
+		//    //{
+		//    //    public int data;
+		//    //    public Nodes left, right;
 
-        //    //public class BinaryTrees
-        //    //{
-        //    //    public Nodes root;
+		//    //    public Nodes(int item)
+		//    //    {
+		//    //        data = item;
+		//    //        left = right = null;
+		//    //    }
+		//    //}
 
-        //    //    /* Compute the "maxDepth" of a tree -- the number of 
-        //    //       nodes along the longest path from the root node 
-        //    //       down to the farthest leaf node.*/
-        //    //    public int maxDepth(Nodes node)
-        //    //    {
-        //    //        if (node == null)
-        //    //            return 0;
-        //    //        else
-        //    //        {
-        //    //            /* compute the depth of each subtree */
-        //    //            int lDepth = maxDepth(node.left);
-        //    //            int rDepth = maxDepth(node.right);
+		//    //public class BinaryTrees
+		//    //{
+		//    //    public Nodes root;
 
-        //    //            /* use the larger one */
-        //    //            if (lDepth > rDepth)
-        //    //                return (lDepth + 1);
-        //    //            else
-        //    //                return (rDepth + 1);
-        //    //        }
-        //    //    }
-        //    //}
-        //}
+		//    //    /* Compute the "maxDepth" of a tree -- the number of 
+		//    //       nodes along the longest path from the root node 
+		//    //       down to the farthest leaf node.*/
+		//    //    public int maxDepth(Nodes node)
+		//    //    {
+		//    //        if (node == null)
+		//    //            return 0;
+		//    //        else
+		//    //        {
+		//    //            /* compute the depth of each subtree */
+		//    //            int lDepth = maxDepth(node.left);
+		//    //            int rDepth = maxDepth(node.right);
 
-
+		//    //            /* use the larger one */
+		//    //            if (lDepth > rDepth)
+		//    //                return (lDepth + 1);
+		//    //            else
+		//    //                return (rDepth + 1);
+		//    //        }
+		//    //    }
+		//    //}
+		//}
 
 
 
 
-    }
+
+
+	}
+
+	public class test
+	{
+		public int nol { get; set; }
+
+		public void printno()
+		{
+			console
+		}
+	}
 }
 
 
