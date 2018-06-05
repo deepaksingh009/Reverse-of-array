@@ -61,8 +61,8 @@ namespace ConsoleApp2.DataStructure.BinaryTree
                 nodetoprint = nodeQueue.Dequeue();
                 Console.WriteLine(nodetoprint.Data);
 
-                
-                if(nodetoprint.Left!=null)
+
+                if (nodetoprint.Left != null)
                 {
                     nodeQueue.Enqueue(nodetoprint.Left);
 
@@ -76,6 +76,34 @@ namespace ConsoleApp2.DataStructure.BinaryTree
 
 
             }
+
+        }
+    }
+
+    public class Heightoftree
+    {
+        int left = 0;
+        int right = 0;
+        public int TreeHeightRecursives(Node node)
+        {
+           
+            if (node == null)
+                return 0;
+            if (node.Left != null)
+            {
+                left++;
+                TreeHeightRecursives(node.Left);
+            }
+
+            if (node.Right != null)
+            {
+                right++;
+                TreeHeightRecursives(node.Right);
+            }
+            if (left > right)
+            { return left; }
+            else
+            { return right; }
 
         }
     }
@@ -107,4 +135,38 @@ namespace ConsoleApp2.DataStructure.BinaryTree
 
     //tree.root.right.right.left = new tNode(14);
     //tree.root.right.right.right = new tNode(15);
+
+
+
+    #region    LevelorderTraversalImplementation
+
+    //Node root = null;
+    //root = new Node(1);
+    //root.Left = new Node(2);
+    //root.Right = new Node(3);
+    //root.Left.Left = new Node(4);
+    //root.Left.Right = new Node(5);
+    //root.Right.Left = new Node(6);
+    //root.Right.Right = new Node(7);
+
+    //LevelorderTraversal levelorderTraversal = new LevelorderTraversal();
+    //levelorderTraversal.Levelodertraversal(root);
+    #endregion
+
+    #region  TreeHeightRecursivesImplementation
+    //Node root = null;
+    //root = new Node(1);
+    //root.Left = new Node(2);
+    //root.Right = new Node(3);
+    //root.Left.Left = new Node(4);
+    //root.Left.Right = new Node(5);
+    //root.Right.Left = new Node(6);
+    //root.Right.Right = new Node(7);
+    //root.Right.Left.Right = new Node(8);
+    //root.Right.Left.Right.Left = new Node(9);
+    //root.Right.Left.Right.Left.Right = new Node(10);
+
+    //Heightoftree heightoftree = new Heightoftree();
+    //int f = heightoftree.TreeHeightRecursives(root);
+    #endregion
 }
