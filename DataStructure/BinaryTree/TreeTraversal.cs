@@ -84,9 +84,11 @@ namespace ConsoleApp2.DataStructure.BinaryTree
     {
         int left = 0;
         int right = 0;
+        int height = 0;
+        Stack<Node> nodestack = new Stack<Node>();
         public int TreeHeightRecursives(Node node)
         {
-           
+
             if (node == null)
                 return 0;
             if (node.Left != null)
@@ -101,10 +103,39 @@ namespace ConsoleApp2.DataStructure.BinaryTree
                 TreeHeightRecursives(node.Right);
             }
             if (left > right)
-            { return left; }
+            { return left+1; }
             else
-            { return right; }
+            { return right+1; }
 
+        }
+
+        public int TreeHeightIterative(Node node)
+        {
+            if (node == null)
+                return 0;
+
+            nodestack.Push(node);
+            while (nodestack.Count > 0)
+            {
+                Node currentnode = new Node();
+                currentnode = nodestack.Pop();
+                if (currentnode.Left != null)
+                {
+                    nodestack.Push(currentnode.Left);
+                }
+                if (currentnode.Right != null)
+                {
+                    nodestack.Push(currentnode.Right);
+
+                }
+                if (currentnode.Right == null && currentnode.Left == null)
+                { }
+                else
+                { height++; }
+
+
+            }
+            return height;
         }
     }
 

@@ -12,9 +12,25 @@ namespace ConsoleApp2
     {
         static void Main()
         {
+            Node root = null;
+            root = new Node(1);
+            root.Left = new Node(2);
+            root.Right = new Node(3);
+            root.Left.Left = new Node(4);
+            root.Left.Right = new Node(5);
+            root.Right.Left = new Node(6);
+            root.Right.Right = new Node(7);
+            root.Right.Left.Right = new Node(8);
+            root.Right.Left.Right.Left = new Node(9);
+            //root.Right.Left.Right.Left.Right = new Node(10);
 
-           
+            Heightoftree heightoftree = new Heightoftree();
+            int f = heightoftree.TreeHeightIterative(root);
+
+           int j= heightoftree.TreeHeightRecursives(root);
+
             Console.WriteLine(f);
+            Console.WriteLine(j);
 
             //root1 = new Node(1);
             //root1.Left = new Node(2);
