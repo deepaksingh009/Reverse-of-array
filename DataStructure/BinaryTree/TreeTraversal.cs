@@ -72,9 +72,6 @@ namespace ConsoleApp2.DataStructure.BinaryTree
                     nodeQueue.Enqueue(nodetoprint.Right);
 
                 }
-                //nodeQueue.Dequeue();
-
-
             }
 
         }
@@ -88,7 +85,6 @@ namespace ConsoleApp2.DataStructure.BinaryTree
         Stack<Node> nodestack = new Stack<Node>();
         public int TreeHeightRecursives(Node node)
         {
-
             if (node == null)
                 return 0;
             if (node.Left != null)
@@ -103,10 +99,9 @@ namespace ConsoleApp2.DataStructure.BinaryTree
                 TreeHeightRecursives(node.Right);
             }
             if (left > right)
-            { return left+1; }
+            { return left + 1; }
             else
-            { return right+1; }
-
+            { return right + 1; }
         }
 
         public int TreeHeightIterative(Node node)
@@ -139,6 +134,62 @@ namespace ConsoleApp2.DataStructure.BinaryTree
         }
     }
 
+    public class spiralordertraversal
+    {
+        public void spiralOrder(Node node)
+        {
+            Stack<Node> Statcknodes = new Stack<Node>();
+            Queue<Node> queuenodes = new Queue<Node>();
+            int number = 0;
+            //queuenodes.Enqueue(node);
+            Statcknodes.Push(node);
+
+            while (true)
+            {
+                Node CurrrentNode = new Node();
+                if (number % 2 != 0)
+                {
+                    CurrrentNode = queuenodes.Dequeue();
+
+                    Console.WriteLine(CurrrentNode.Data);
+                    if (CurrrentNode.Left != null)
+                        Statcknodes.Push(CurrrentNode.Left);
+                    if (CurrrentNode.Right != null)
+                        Statcknodes.Push(CurrrentNode.Right);
+
+                    if(queuenodes.Count<=0)
+                    {
+                        if (Statcknodes.Count <= 0)
+                        {
+                            break;
+                        }
+                        else
+                        {
+                            number++;
+                        }
+                    }
+                }
+            
+                else
+                {
+                    CurrrentNode = Statcknodes.Pop();
+                    Console.WriteLine(CurrrentNode.Data);
+                    if (CurrrentNode.Left != null)
+                        queuenodes.Enqueue(CurrrentNode.Left);
+                    if (CurrrentNode.Right != null)
+                        queuenodes.Enqueue(CurrrentNode.Right);
+
+                    if (Statcknodes.Count <= 0)
+                    {
+                        if (queuenodes.Count <= 0)
+                        { break; }
+                        else
+                        number++;
+                    }
+                }
+            }
+        }
+    }
 
     //implenation
 
