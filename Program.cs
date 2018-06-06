@@ -12,17 +12,14 @@ namespace ConsoleApp2
     {
         static void Main()
         {
-            Node root = null;
-            root = new Node(1);
+            Node root = new Node(1);
             root.Left = new Node(2);
             root.Right = new Node(3);
             root.Left.Left = new Node(4);
             root.Left.Right = new Node(5);
-            root.Right.Left = new Node(6);
-            root.Right.Right = new Node(7);
-
-            spiralordertraversal spiralordertraversal = new spiralordertraversal();
-            spiralordertraversal.spiralOrder(root);
+            root.Left.Left.Left= new Node(6);
+            Tree t = new Tree(root);
+            t.printTopView();
 
             //root1 = new Node(1);
             //root1.Left = new Node(2);

@@ -157,7 +157,7 @@ namespace ConsoleApp2.DataStructure.BinaryTree
                     if (CurrrentNode.Right != null)
                         Statcknodes.Push(CurrrentNode.Right);
 
-                    if(queuenodes.Count<=0)
+                    if (queuenodes.Count <= 0)
                     {
                         if (Statcknodes.Count <= 0)
                         {
@@ -169,7 +169,7 @@ namespace ConsoleApp2.DataStructure.BinaryTree
                         }
                     }
                 }
-            
+
                 else
                 {
                     CurrrentNode = Statcknodes.Pop();
@@ -184,9 +184,85 @@ namespace ConsoleApp2.DataStructure.BinaryTree
                         if (queuenodes.Count <= 0)
                         { break; }
                         else
-                        number++;
+                            number++;
                     }
                 }
+            }
+        }
+    }
+    public class QItem
+    {
+        public Node node;
+        public int hd;
+        public QItem(Node n, int h)
+        {
+            node = n;
+            hd = h;
+        }
+    }
+    public class Printtopview
+    {
+        Node nodes;
+        public Printtopview(Node node)
+        {
+            nodes = node;
+        }
+        public void TopView(Node node)
+        {
+            //HashSet<>
+        }
+    }
+
+
+
+    // A class to represent a queue item. The queue is used to do Level
+    // order traversal. Every Queue item contains node and horizontal
+    // distance of node from root
+
+
+    // Class for a Binary Tree
+    class Tree
+    {
+        Node root;
+
+        // Constructors
+        public Tree() { root = null; }
+        public Tree(Node n) { root = n; }
+
+        // This method prints nodes in top view of binary tree
+        public void printTopView()
+        {
+            // base case
+            if (root == null) { return; }
+
+            // Creates an empty hashset
+            HashSet<int> set = new HashSet<int>();
+
+            // Create a queue and add root to it
+            Queue<QItem> Q = new Queue<QItem>();
+            Q.Enqueue(new QItem(root, 0)); // Horizontal distance of root is 0
+
+            // Standard BFS or level order traversal loop
+            while (Q.Count > 0)
+            {
+                // Remove the front item and get its details
+                QItem qi = Q.Dequeue();
+                int hd = qi.hd;
+                Node n = qi.node;
+
+                // If this is the first node at its horizontal distance,
+                // then this node is in top view
+                if (!set.Contains(hd))
+                {
+                    set.Add(hd);
+                    Console.WriteLine(n.Data + " ");
+                }
+
+                // Enqueue left and right children of current node
+                if (n.Left != null)
+                    Q.Enqueue(new QItem(n.Left, hd - 1));
+                if (n.Right != null)
+                    Q.Enqueue(new QItem(n.Right, hd + 1));
             }
         }
     }
