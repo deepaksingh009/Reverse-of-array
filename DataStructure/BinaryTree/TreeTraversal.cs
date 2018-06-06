@@ -207,8 +207,32 @@ namespace ConsoleApp2.DataStructure.BinaryTree
         {
             nodes = node;
         }
-        public void TopView(Node node)
+        public void TopView()
         {
+            HashSet<int> vs = new HashSet<int>();
+            Queue<QItem> queue = new Queue<QItem>();
+            queue.Enqueue(new QItem(nodes, 0));
+
+            while (queue.Count > 0)
+            {
+                QItem qItem = queue.Dequeue();
+
+                Node currentnode = qItem.node;
+                int hd = qItem.hd;
+
+                if (!vs.Contains(hd))
+                {
+                    vs.Add(hd);
+                    Console.WriteLine(currentnode.Data + " ");
+                }
+
+                if (currentnode.Left != null) 
+                queue.Enqueue(new QItem(currentnode.Left, hd - 1));
+
+                if (currentnode.Right != null) 
+                queue.Enqueue(new QItem(currentnode.Right, hd + 1));
+
+            }
             //HashSet<>
         }
     }

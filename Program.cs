@@ -17,9 +17,9 @@ namespace ConsoleApp2
             root.Right = new Node(3);
             root.Left.Left = new Node(4);
             root.Left.Right = new Node(5);
-            root.Left.Left.Left= new Node(6);
-            Tree t = new Tree(root);
-            t.printTopView();
+            root.Left.Left.Left = new Node(6);
+            Printtopview t = new Printtopview(root);
+            t.TopView();
 
             //root1 = new Node(1);
             //root1.Left = new Node(2);
