@@ -226,18 +226,72 @@ namespace ConsoleApp2.DataStructure.BinaryTree
                     Console.WriteLine(currentnode.Data + " ");
                 }
 
-                if (currentnode.Left != null) 
-                queue.Enqueue(new QItem(currentnode.Left, hd - 1));
+                if (currentnode.Left != null)
+                    queue.Enqueue(new QItem(currentnode.Left, hd - 1));
 
-                if (currentnode.Right != null) 
-                queue.Enqueue(new QItem(currentnode.Right, hd + 1));
+                if (currentnode.Right != null)
+                    queue.Enqueue(new QItem(currentnode.Right, hd + 1));
 
             }
             //HashSet<>
         }
     }
 
-  
+    public class PrintLeftViewRecursive
+    {                                     
+        int maxlength = 0;
+        public void Print(Node node, int level)
+        {
+            if (node == null)
+                return;
+
+            if (maxlength < level)
+            {
+                Console.WriteLine(node.Data);
+                maxlength = level;
+            }
+           
+            Print(node.Left, level + 1);
+
+            Print(node.Right, level + 1);
+
+
+
+        }
+    }
+    public class PrintRightViewRecursive
+    {
+        int maxlength = 0;
+        public void Print(Node node, int level)
+        {
+            if (node == null)
+                return;
+
+            if (maxlength < level)
+            {
+                Console.WriteLine(node.Data);
+                maxlength = level;
+            }
+
+            Print(node.Right, level + 1);
+
+            Print(node.Left, level + 1);
+
+          
+
+
+
+        }
+    }
+
+
+
+
+
+
+    #region Implementation
+
+    #region  implenation MorrisInorder
 
     //implenation
 
@@ -266,7 +320,7 @@ namespace ConsoleApp2.DataStructure.BinaryTree
     //tree.root.right.right.left = new tNode(14);
     //tree.root.right.right.right = new tNode(15);
 
-
+    #endregion
 
     #region    LevelorderTraversalImplementation
 
@@ -300,4 +354,8 @@ namespace ConsoleApp2.DataStructure.BinaryTree
     //int f = heightoftree.TreeHeightRecursives(root);
     //int j = heightoftree.TreeHeightIterative(root);
     #endregion
+    #endregion
+
 }
+
+
