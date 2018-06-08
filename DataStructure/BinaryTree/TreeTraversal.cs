@@ -264,8 +264,8 @@ namespace ConsoleApp2.DataStructure.BinaryTree
         int maxlength = 0;
         public void Print(Node node, int level)
         {
-            if (node == null)
-                return;
+            //if (node == null)
+            //    return;
 
             if (maxlength < level)
             {
@@ -276,16 +276,8 @@ namespace ConsoleApp2.DataStructure.BinaryTree
             Print(node.Right, level + 1);
 
             Print(node.Left, level + 1);
-
-          
-
-
-
         }
     }
-
-
-
 
 
 

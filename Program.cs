@@ -18,12 +18,12 @@ namespace ConsoleApp2
             root.Left.Left = new Node(4);
             root.Left.Right = new Node(5);
             root.Left.Left.Left = new Node(6);
-            //Printtopview t = new Printtopview(root);
-            //t.TopView();
+            Printtopview t = new Printtopview(root);
+            t.TopView();
 
 
-            PrintLeftViewRecursive printLeftViewRecursive = new PrintLeftViewRecursive();
-            printLeftViewRecursive.Print(root, 1);
+            //PrintLeftViewRecursive printLeftViewRecursive = new PrintLeftViewRecursive();
+            //printLeftViewRecursive.Print(root, 1);
             //root1 = new Node(1);
             //root1.Left = new Node(2);
             //root1.Right = new Node(3);
