@@ -7107,10 +7107,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\work\\Documents\\Visual Studio 2017\\Reverse-of-array\\ConsoleApp2.csproj",
+      "projectUniqueName": "F:\\Deepak\\work\\Reverse-of-array\\ConsoleApp2.csproj",
       "projectName": "ConsoleApp2",
-      "projectPath": "C:\\Users\\work\\Documents\\Visual Studio 2017\\Reverse-of-array\\ConsoleApp2.csproj",
-      "outputPath": "C:\\Users\\work\\Documents\\Visual Studio 2017\\Reverse-of-array\\obj\\",
+      "projectPath": "F:\\Deepak\\work\\Reverse-of-array\\ConsoleApp2.csproj",
+      "outputPath": "F:\\Deepak\\work\\Reverse-of-array\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"

@@ -14,17 +14,13 @@ namespace ConsoleApp2
 		{
 
 			test t = new test();
-			t.nol = 1;
 
 			test f = new test();
-			f.nol = t.nol;
+			t.nol = 1;
+			f = t;
 			f.nol = 2;
-			
-			void testmethod()
-			{
-		
-			}
-			
+
+			Console.WriteLine("{0},{1}", t.nol, f.nol);
 
 			//Node root = null;
 			//Node root1 = null;
@@ -158,9 +154,9 @@ namespace ConsoleApp2
 	{
 		public int nol { get; set; }
 
-		public void printno()
+		public void printno(test t)
 		{
-			console
+			Console.WriteLine(t.nol);
 		}
 	}
 }
