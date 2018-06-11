@@ -163,6 +163,9 @@ namespace ConsoleApp2.Patterns
     }
 }
 
+
+
+
 //Implementation
 //            Patternsclass patterns = new Patternsclass();
 //patterns.Lshapepattern();

@@ -8,157 +8,122 @@ using ConsoleApp2.DesignPattern.Creational_Pattern;
 using ConsoleApp2.Patterns;
 namespace ConsoleApp2
 {
-	public class BinarySearchTree
-	{
-		static void Main()
-		{
-
-			test t = new test();
-
-			test f = new test();
-			t.nol = 1;
-			f = t;
-			f.nol = 2;
-
-			Console.WriteLine("{0},{1}", t.nol, f.nol);
-
-			//Node root = null;
-			//Node root1 = null;
-			//root = new Node(1);
-			//root.Left = new Node(2);
-			//root.Right = new Node(3);
-			//root.Left.Left = new Node(4);
-			//root.Left.Right = new Node(5);
+    public class BinarySearchTree
+    {
+        static void Main()
+        {
+            Node root = new Node(1);
+            root.Left = new Node(2);
+            root.Right = new Node(3);
+            root.Left.Left = new Node(4);
+            root.Left.Right = new Node(5);
+            root.Left.Left.Left = new Node(6);
+            Printtopview t = new Printtopview(root);
+            t.TopView();
 
 
-			//root1 = new Node(1);
-			//root1.Left = new Node(2);
-			//root1.Right = new Node(3);
-			//root1.Left.Left = new Node(4);
-			//root1.Left.Right = new Node(5);
+                                                
 
 
-			//BinaryTree tree = new BinaryTree();
-			//if (tree.identicalTrees(root, root1))
-			//    Console.WriteLine("Both trees are identical");
-			//else
-			//    Console.WriteLine("Trees are not identical");
+            //// Create and run the African animal world
+
+            //ContinentFactory africa = new AfricaFactory();
+            //AnimalWorld world = new AnimalWorld(africa);
+            //world.RunFoodChain();
+
+            //// Create and run the American animal world
+
+            //ContinentFactory america = new AmericaFactory();
+            //world = new AnimalWorld(america);
+            //world.RunFoodChain();
+
+            //// Wait for user input
+
+            Console.ReadKey();
+
+        }
 
 
-			////TreeTraversaliterating n = new TreeTraversaliterating();
-			////n.postOrderItrOneStack(root);                                           
+    }
 
 
-
-
-
-			//// Create and run the African animal world
-
-			//ContinentFactory africa = new AfricaFactory();
-			//AnimalWorld world = new AnimalWorld(africa);
-			//world.RunFoodChain();
-
-			//// Create and run the American animal world
-
-			//ContinentFactory america = new AmericaFactory();
-			//world = new AnimalWorld(america);
-			//world.RunFoodChain();
-
-			//// Wait for user input
-
-			Console.ReadKey();
-
-		}
-
-
-	}
-
-
-	public class BinaryTree
-	{
+    public class BinaryTree
+    {
 
 
 
 
-		/* Given two trees, return true if they are
+        /* Given two trees, return true if they are
            structurally identical */
-		public Boolean identicalTrees(Node a, Node b)
-		{
-			/*1. both empty */
-			if (a == null && b == null)
-				return true;
+        public Boolean identicalTrees(Node a, Node b)
+        {
+            /*1. both empty */
+            if (a == null && b == null)
+                return true;
 
-			/* 2. both non-empty -> compare them */
-			if (a != null && b != null)
-				return (a.Data == b.Data && identicalTrees(a.Left, b.Left) && identicalTrees(a.Right, b.Right));
+            /* 2. both non-empty -> compare them */
+            if (a != null && b != null)
+                return (a.Data == b.Data && identicalTrees(a.Left, b.Left) && identicalTrees(a.Right, b.Right));
 
-			/* 3. one empty, one not -> false */
-			return false;
-		}
+            /* 3. one empty, one not -> false */
+            return false;
+        }
 
-		/* Driver program to test identicalTrees() function */
+        /* Driver program to test identicalTrees() function */
 
-		//public class BinaryTree
-		//{
+        //public class BinaryTree
+        //{
 
-		//    // Java program to find height of tree
+        //    // Java program to find height of tree
 
-		//    // A binary tree node
-		//    //public class Nodes
-		//    //{
-		//    //    public int data;
-		//    //    public Nodes left, right;
+        //    // A binary tree node
+        //    //public class Nodes
+        //    //{
+        //    //    public int data;
+        //    //    public Nodes left, right;
 
-		//    //    public Nodes(int item)
-		//    //    {
-		//    //        data = item;
-		//    //        left = right = null;
-		//    //    }
-		//    //}
+        //    //    public Nodes(int item)
+        //    //    {
+        //    //        data = item;
+        //    //        left = right = null;
+        //    //    }
+        //    //}
 
-		//    //public class BinaryTrees
-		//    //{
-		//    //    public Nodes root;
+        //    //public class BinaryTrees
+        //    //{
+        //    //    public Nodes root;
 
-		//    //    /* Compute the "maxDepth" of a tree -- the number of 
-		//    //       nodes along the longest path from the root node 
-		//    //       down to the farthest leaf node.*/
-		//    //    public int maxDepth(Nodes node)
-		//    //    {
-		//    //        if (node == null)
-		//    //            return 0;
-		//    //        else
-		//    //        {
-		//    //            /* compute the depth of each subtree */
-		//    //            int lDepth = maxDepth(node.left);
-		//    //            int rDepth = maxDepth(node.right);
+        //    //    /* Compute the "maxDepth" of a tree -- the number of 
+        //    //       nodes along the longest path from the root node 
+        //    //       down to the farthest leaf node.*/
+        //    //    public int maxDepth(Nodes node)
+        //    //    {
+        //    //        if (node == null)
+        //    //            return 0;
+        //    //        else
+        //    //        {
+        //    //            /* compute the depth of each subtree */
+        //    //            int lDepth = maxDepth(node.left);
+        //    //            int rDepth = maxDepth(node.right);
 
-		//    //            /* use the larger one */
-		//    //            if (lDepth > rDepth)
-		//    //                return (lDepth + 1);
-		//    //            else
-		//    //                return (rDepth + 1);
-		//    //        }
-		//    //    }
-		//    //}
-		//}
-
-
+        //    //            /* use the larger one */
+        //    //            if (lDepth > rDepth)
+        //    //                return (lDepth + 1);
+        //    //            else
+        //    //                return (rDepth + 1);
+        //    //        }
+        //    //    }
+        //    //}
+        //}
 
 
 
 
-	}
 
-	public class test
-	{
-		public int nol { get; set; }
 
-		public void printno(test t)
-		{
-			Console.WriteLine(t.nol);
-		}
-	}
+    }
+
+
 }
 
 

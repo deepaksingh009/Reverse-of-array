@@ -1,2 +1,7 @@
 ﻿https://www.codeproject.com/Articles/716413/Factory-Method-Pattern-vs-Abstract-Factory-Pattern
 https://refactoring.guru/design-patterns/factory-comparison
+https://sourcemaking.com
+
+Adapter desing pattern like automapper
+https://gigi.nullneuron.net/gigilabs/the-adapter-design-pattern-for-dtos-in-c/
+https://www.linkedin.com/pulse/adapter-design-pattern-vs-automapper-eman-mughal
