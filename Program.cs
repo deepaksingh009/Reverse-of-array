@@ -22,24 +22,7 @@ namespace ConsoleApp2
             t.TopView();
 
 
-            //PrintLeftViewRecursive printLeftViewRecursive = new PrintLeftViewRecursive();
-            //printLeftViewRecursive.Print(root, 1);
-            //root1 = new Node(1);
-            //root1.Left = new Node(2);
-            //root1.Right = new Node(3);
-            //root1.Left.Left = new Node(4);
-            //root1.Left.Right = new Node(5);
-
-
-            //BinaryTree tree = new BinaryTree();
-            //if (tree.identicalTrees(root, root1))
-            //    Console.WriteLine("Both trees are identical");
-            //else
-            //    Console.WriteLine("Trees are not identical");
-
-
-            ////TreeTraversaliterating n = new TreeTraversaliterating();
-            ////n.postOrderItrOneStack(root);                                           
+                                                
 
 
             //// Create and run the African animal world
