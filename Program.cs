@@ -1,11 +1,6 @@
 ﻿using ConsoleApp2.DataStructure.BinaryTree;
 using System;
-using System.Collections.Generic;
-using ConsoleApp2.DesignPattern;
-using ConsoleApp2.DesignPattern.Interface;
-using ConsoleApp2.DesignPattern.Creational_Pattern.Factory_Pattern;
-using ConsoleApp2.DesignPattern.Creational_Pattern;
-using ConsoleApp2.Patterns;
+
 namespace ConsoleApp2
 {
     public class BinarySearchTree
