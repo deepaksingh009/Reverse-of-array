@@ -5,36 +5,52 @@ namespace ConsoleApp2
 {
     public class BinarySearchTree
     {
-        static void Main()
+		void start()
+		{
+			long[] a1 = { 3, 4, 5 };
+			long[] a2 = fix(a1);
+			Console.WriteLine(a1[0] + a1[1] + a1[2] + " ");
+			Console.WriteLine(a2[0] + a2[1] + a2[2]);
+		}
+
+		long[] fix(long[] a3)
+		{
+			a3[1] = 7;
+			return a3;
+		}
+		static void Main()
         {
-            Node root = new Node(1);
-            root.Left = new Node(2);
-            root.Right = new Node(3);
-            root.Left.Left = new Node(4);
-            root.Left.Right = new Node(5);
-            root.Left.Left.Left = new Node(6);
-            Printtopview t = new Printtopview(root);
-            t.TopView();
+			BinarySearchTree p = new BinarySearchTree();
+			p.start();	
+
+			//Node root = new Node(1);
+			//root.Left = new Node(2);
+			//root.Right = new Node(3);
+			//root.Left.Left = new Node(4);
+			//root.Left.Right = new Node(5);
+			//root.Left.Left.Left = new Node(6);
+			//Printtopview t = new Printtopview(root);
+			//t.TopView();
 
 
-                                                
 
 
-            //// Create and run the African animal world
 
-            //ContinentFactory africa = new AfricaFactory();
-            //AnimalWorld world = new AnimalWorld(africa);
-            //world.RunFoodChain();
+			//// Create and run the African animal world
 
-            //// Create and run the American animal world
+			//ContinentFactory africa = new AfricaFactory();
+			//AnimalWorld world = new AnimalWorld(africa);
+			//world.RunFoodChain();
 
-            //ContinentFactory america = new AmericaFactory();
-            //world = new AnimalWorld(america);
-            //world.RunFoodChain();
+			//// Create and run the American animal world
 
-            //// Wait for user input
+			//ContinentFactory america = new AmericaFactory();
+			//world = new AnimalWorld(america);
+			//world.RunFoodChain();
 
-            Console.ReadKey();
+			//// Wait for user input
+
+			Console.ReadKey();
 
         }
 
