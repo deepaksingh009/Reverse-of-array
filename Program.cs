@@ -4,57 +4,85 @@ using System.Collections.Generic;
 
 namespace ConsoleApp2
 {
-    public class BinarySearchTree
+    public static class BinarySearchTree
     {
-		private LinkedList<int> adjLists;
-		
-		static void Main()
+      //  private LinkedList<int> adjLists;
+
+        static void Main()
         {
+            client client = new client();
+            client.clientcode = "NPCL-00-0001";
+           // client.sitecode = "IN01";
+           // BinarySearchTree.StringReplace(client);
+            string s = client.StringReplace();
+            Console.WriteLine(s);
+            //var tune = new LinkedList<string>();
+            //tune.AddFirst("do"); // do
+            //tune.AddLast("so"); // do - so
+            //tune.AddAfter(tune.First, "re"); // do - re- so
+            //tune.AddAfter(tune.First.Next, "mi"); // do - re - mi- so
+            //tune.AddBefore(tune.Last, "fa"); // do - re - mi - fa- so
+            //tune.RemoveFirst(); // re - mi - fa - so
+            //tune.RemoveLast(); // re - mi - fa
+            //LinkedListNode<string> miNode = tune.Find("mi");
+            //tune.Remove(miNode); // re - fa
+            //tune.AddFirst(miNode); // mi- re - fa
+            //foreach (string s in tune) Console.WriteLine(s);
+
+            //Node root = new Node(1);
+            //root.Left = new Node(2);
+            //root.Right = new Node(3);
+            //root.Left.Left = new Node(4);
+            //root.Left.Right = new Node(5);
+            //root.Left.Left.Left = new Node(6);
+            //Printtopview t = new Printtopview(root);
+            //t.TopView();
 
 
-			//var tune = new LinkedList<string>();
-			//tune.AddFirst("do"); // do
-			//tune.AddLast("so"); // do - so
-			//tune.AddAfter(tune.First, "re"); // do - re- so
-			//tune.AddAfter(tune.First.Next, "mi"); // do - re - mi- so
-			//tune.AddBefore(tune.Last, "fa"); // do - re - mi - fa- so
-			//tune.RemoveFirst(); // re - mi - fa - so
-			//tune.RemoveLast(); // re - mi - fa
-			//LinkedListNode<string> miNode = tune.Find("mi");
-			//tune.Remove(miNode); // re - fa
-			//tune.AddFirst(miNode); // mi- re - fa
-			//foreach (string s in tune) Console.WriteLine(s);
-			
-			//Node root = new Node(1);
-			//root.Left = new Node(2);
-			//root.Right = new Node(3);
-			//root.Left.Left = new Node(4);
-			//root.Left.Right = new Node(5);
-			//root.Left.Left.Left = new Node(6);
-			//Printtopview t = new Printtopview(root);
-			//t.TopView();
 
 
 
+            //// Create and run the African animal world
 
+            //ContinentFactory africa = new AfricaFactory();
+            //AnimalWorld world = new AnimalWorld(africa);
+            //world.RunFoodChain();
 
-			//// Create and run the African animal world
+            //// Create and run the American animal world
 
-			//ContinentFactory africa = new AfricaFactory();
-			//AnimalWorld world = new AnimalWorld(africa);
-			//world.RunFoodChain();
+            //ContinentFactory america = new AmericaFactory();
+            //world = new AnimalWorld(america);
+            //world.RunFoodChain();
 
-			//// Create and run the American animal world
+            //// Wait for user input
 
-			//ContinentFactory america = new AmericaFactory();
-			//world = new AnimalWorld(america);
-			//world.RunFoodChain();
-
-			//// Wait for user input
-
-			Console.ReadKey();
+            Console.ReadKey();
 
         }
+
+        public static string StringReplace(this client ps)
+        {
+            string s = BinarySearchTree.urlList[2];
+            s = s.Replace("/clientCode", string.IsNullOrEmpty(ps.clientcode)? "" : "/" + ps.clientcode).Replace("/siteCode", string.IsNullOrEmpty(ps.sitecode) ? "" : "/" + ps.sitecode);
+           
+
+            return s;
+        }
+        public class client
+        {
+            public string clientcode;
+            public string sitecode;
+           
+        }
+        private static IDictionary<int, string> urlList = new Dictionary<int, string>()
+            {
+                { 1, "/api/Client/NPCL-00-0001/Account/Balance"},
+                { 2,"http://url/api/Client/clientCode/Account/siteCode/OutstandingPi"},
+                //{ 3,"/api/Client/"}          ,
+                //{ 4,"/api/Client?filter=IN01"}
+
+            };
+
 
 
     }
