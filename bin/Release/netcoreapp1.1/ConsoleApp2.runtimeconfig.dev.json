@@ -1,8 +1,0 @@
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "C:\\Users\\deepaks\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\deepaks\\.nuget\\packages"
-    ]
-  }
-}
